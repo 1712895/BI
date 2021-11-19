@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{AFDBBC3E-469B-4707-80B3-89258B884152}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{1EBF5E1A-8FEF-4521-9CCF-FCBB4D0408EB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -180,6 +180,18 @@
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A5E289CC-4BD4-4AD6-8CFD-D9FCCC082D52}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\tanlan\Desktop\Book1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -401,6 +413,30 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{58045022-954F-440C-9643-953406842BCD}"
+      DTS:ObjectName="LocalHost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{853D1D86-78BB-4A4D-BD71-7C086E68E86A}"
+      DTS:ObjectName="LocalHost 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.PP_Stage]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{1B719F2B-B2A7-4B6E-BC65-0937C4B4DB3A}"
@@ -420,6 +456,18 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=.;Initial Catalog=PP_Stage;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ED0BBD37-5743-43FF-8249-9937ADC863B4}"
+      DTS:ObjectName="LocalHost.Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -2782,6 +2830,663 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{85925A26-DA4A-4973-BB87-C15146426E8A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">PCD_OA_LSOA_MSOA_LAD_AUG21_UK_L$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd7]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcd7]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd7]"
+                      name="pcd7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd8]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcd8]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd8]"
+                      name="pcd8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcds]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcds]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcds]"
+                      name="pcds"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[dointr]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[dointr]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[dointr]"
+                      name="dointr"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[doterm]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[doterm]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[doterm]"
+                      name="doterm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[usertype]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[usertype]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[usertype]"
+                      name="usertype"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[oa11cd]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[oa11cd]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[oa11cd]"
+                      name="oa11cd"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11cd]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[lsoa11cd]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11cd]"
+                      name="lsoa11cd"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11cd]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[msoa11cd]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11cd]"
+                      name="msoa11cd"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladcd]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladcd]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladcd]"
+                      name="ladcd"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11nm]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[lsoa11nm]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11nm]"
+                      name="lsoa11nm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11nm]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[msoa11nm]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11nm]"
+                      name="msoa11nm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnm]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladnm]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnm]"
+                      name="ladnm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnmw]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladnmw]"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnmw]"
+                      name="ladnmw"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcd7]"
+                      dataType="wstr"
+                      length="255"
+                      name="pcd7" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcd8]"
+                      dataType="wstr"
+                      length="255"
+                      name="pcd8" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[pcds]"
+                      dataType="wstr"
+                      length="255"
+                      name="pcds" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[dointr]"
+                      dataType="r8"
+                      name="dointr" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[doterm]"
+                      dataType="r8"
+                      name="doterm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[usertype]"
+                      dataType="r8"
+                      name="usertype" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[oa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      name="oa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[lsoa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      name="lsoa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[msoa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      name="msoa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladcd]"
+                      dataType="wstr"
+                      length="255"
+                      name="ladcd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[lsoa11nm]"
+                      dataType="wstr"
+                      length="255"
+                      name="lsoa11nm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[msoa11nm]"
+                      dataType="wstr"
+                      length="255"
+                      name="msoa11nm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladnm]"
+                      dataType="wstr"
+                      length="255"
+                      name="ladnm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].ExternalColumns[ladnmw]"
+                      dataType="wstr"
+                      length="255"
+                      name="ladnmw" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcd7]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcd7]"
+                      name="pcd7" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcd8]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcd8]"
+                      name="pcd8" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcds]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[pcds]"
+                      name="pcds" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[dointr]"
+                      dataType="r8"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[dointr]"
+                      name="dointr" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[doterm]"
+                      dataType="r8"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[doterm]"
+                      name="doterm" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[usertype]"
+                      dataType="r8"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[usertype]"
+                      name="usertype" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[oa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[oa11cd]"
+                      name="oa11cd" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[lsoa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[lsoa11cd]"
+                      name="lsoa11cd" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[msoa11cd]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[msoa11cd]"
+                      name="msoa11cd" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladcd]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladcd]"
+                      name="ladcd" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[lsoa11nm]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[lsoa11nm]"
+                      name="lsoa11nm" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[msoa11nm]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[msoa11nm]"
+                      name="msoa11nm" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladnm]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladnm]"
+                      name="ladnm" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladnmw]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ladnmw]"
+                      name="ladnmw" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LU]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pcd7]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="pcd7"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcd7]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd7]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pcd8]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="pcd8"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcd8]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcd8]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pcds]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="pcds"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcds]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[pcds]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dointr]"
+                      cachedDataType="r8"
+                      cachedName="dointr"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dointr]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[dointr]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[doterm]"
+                      cachedDataType="r8"
+                      cachedName="doterm"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[doterm]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[doterm]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[usertype]"
+                      cachedDataType="r8"
+                      cachedName="usertype"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[usertype]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[usertype]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[oa11cd]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="oa11cd"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[oa11cd]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[oa11cd]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[lsoa11cd]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="lsoa11cd"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lsoa11cd]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11cd]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[msoa11cd]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="msoa11cd"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[msoa11cd]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11cd]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ladcd]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ladcd"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladcd]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladcd]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[lsoa11nm]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="lsoa11nm"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lsoa11nm]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[lsoa11nm]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[msoa11nm]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="msoa11nm"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[msoa11nm]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[msoa11nm]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ladnm]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ladnm"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladnm]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnm]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ladnmw]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ladnmw"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladnmw]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output].Columns[ladnmw]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcd7]"
+                      dataType="wstr"
+                      length="256"
+                      name="pcd7" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcd8]"
+                      dataType="wstr"
+                      length="256"
+                      name="pcd8" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcds]"
+                      dataType="wstr"
+                      length="256"
+                      name="pcds" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dointr]"
+                      dataType="wstr"
+                      length="256"
+                      name="dointr" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[doterm]"
+                      dataType="wstr"
+                      length="256"
+                      name="doterm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[usertype]"
+                      dataType="bool"
+                      name="usertype" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[oa11cd]"
+                      dataType="wstr"
+                      length="256"
+                      name="oa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lsoa11cd]"
+                      dataType="wstr"
+                      length="256"
+                      name="lsoa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[msoa11cd]"
+                      dataType="wstr"
+                      length="256"
+                      name="msoa11cd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladcd]"
+                      dataType="wstr"
+                      length="256"
+                      name="ladcd" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lsoa11nm]"
+                      dataType="wstr"
+                      length="256"
+                      name="lsoa11nm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[msoa11nm]"
+                      dataType="wstr"
+                      length="256"
+                      name="msoa11nm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladnm]"
+                      dataType="wstr"
+                      length="256"
+                      name="ladnm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ladnmw]"
+                      dataType="wstr"
+                      length="256"
+                      name="ladnmw" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Excel Source Output]"
+              endId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\PostcodeToStage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -4347,23 +5052,27 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\AccidentsToStage"
           TopLeft="488.57143689175,54.2941184085134" />
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\VehiclesToStage"
-          TopLeft="684.285725939031,55.058824301591" />
+          Size="164,41.6"
+          Id="Package\CasualtiesToStage"
+          TopLeft="82.1428585417418,61.1764714462122" />
+        <NodeLayout
+          Size="321.6,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
+          TopLeft="99.28571597654,134.588237181667" />
         <NodeLayout
           Size="168.8,41.6"
           Id="Package\PostcodeToStage"
           TopLeft="299.28571938252,58.1176478739016" />
         <NodeLayout
-          Size="164,41.6"
-          Id="Package\CasualtiesToStage"
-          TopLeft="82.1428585417418,61.1764714462122" />
+          Size="155.2,41.6"
+          Id="Package\VehiclesToStage"
+          TopLeft="684.285725939031,55.058824301591" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4469,48 +5178,44 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\VehiclesToStage">
+    design-time-name="Package\CasualtiesToStage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,41.6"
-          Id="Package\VehiclesToStage\Vehicle_Stage"
-          TopLeft="158,306" />
+          Size="125.6,41.6"
+          Id="Package\CasualtiesToStage\Casualties"
+          TopLeft="372.230769230769,23.4615384615385" />
         <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\VehiclesToStage\Vehicles"
-          TopLeft="60,60" />
-        <NodeLayout
-          Size="199.2,41.6"
-          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
-          TopLeft="95.0000005960464,191.529413609356" />
+          Size="213.6,41.6"
+          Id="Package\CasualtiesToStage\TRUNCATE Casualties_Stage"
+          TopLeft="350.769230769231,126.923076923077" />
         <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
-          TopLeft="194.600000596046,233.129413609356">
+          Id="Package\CasualtiesToStage.Paths[Flat File Source Output]"
+          TopLeft="435.030769230769,65.0615384615385">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="35.3999994039537,72.870586390644"
+              EndConnector="22.5384615384615,61.8615384615385"
               Start="0,0"
-              End="35.3999994039537,65.370586390644">
+              End="22.5384615384615,54.3615384615385">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.435293195322" />
+                    End="0,26.9307692307692" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32.435293195322"
-                    Point2="0,36.435293195322"
-                    Point3="4,36.435293195322" />
+                    Point1="0,26.9307692307692"
+                    Point2="0,30.9307692307692"
+                    Point3="4,30.9307692307692" />
                   <mssgle:LineSegment
-                    End="31.3999994039537,36.435293195322" />
+                    End="18.5384615384615,30.9307692307692" />
                   <mssgle:CubicBezierSegment
-                    Point1="31.3999994039537,36.435293195322"
-                    Point2="35.3999994039537,36.435293195322"
-                    Point3="35.3999994039537,40.435293195322" />
+                    Point1="18.5384615384615,30.9307692307692"
+                    Point2="22.5384615384615,30.9307692307692"
+                    Point3="22.5384615384615,34.9307692307692" />
                   <mssgle:LineSegment
-                    End="35.3999994039537,65.370586390644" />
+                    End="22.5384615384615,54.3615384615385" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4519,32 +5224,24 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\CasualtiesToStage\CasualtiesToStage"
+          TopLeft="373.192307692308,235.5" />
         <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
-          TopLeft="118.4,101.6">
+          Id="Package\CasualtiesToStage.Paths[OLE DB Command Output]"
+          TopLeft="456.380769230769,168.523076923077">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="76.2000005960464,89.929413609356"
+              EndConnector="0,66.9769230769231"
               Start="0,0"
-              End="76.2000005960464,82.429413609356">
+              End="0,59.4769230769231">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.964706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.964706804678"
-                    Point2="0,44.964706804678"
-                    Point3="4,44.964706804678" />
-                  <mssgle:LineSegment
-                    End="72.2000005960464,44.964706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="72.2000005960464,44.964706804678"
-                    Point2="76.2000005960464,44.964706804678"
-                    Point3="76.2000005960464,48.964706804678" />
-                  <mssgle:LineSegment
-                    End="76.2000005960464,82.429413609356" />
+                    End="0,59.4769230769231" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4557,7 +5254,71 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\VehiclesToStage\Vehicle_Stage">
+    design-time-name="Package\CasualtiesToStage\CasualtiesToStage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source"
+          TopLeft="285.714290579971,73.4117657354547" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination"
+          TopLeft="275.000004683222,153.705884508608" />
+        <EdgeLayout
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Excel Source Output]"
+          TopLeft="357.557147631597,115.011765735455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.6941187731536"
+              Start="0,0"
+              End="0,31.1941187731536">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.1941187731536" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4671,44 +5432,48 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\CasualtiesToStage">
+    design-time-name="Package\VehiclesToStage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\CasualtiesToStage\Casualties"
-          TopLeft="372.230769230769,23.4615384615385" />
+          Size="144,41.6"
+          Id="Package\VehiclesToStage\Vehicle_Stage"
+          TopLeft="158,306" />
         <NodeLayout
-          Size="213.6,41.6"
-          Id="Package\CasualtiesToStage\TRUNCATE Casualties_Stage"
-          TopLeft="350.769230769231,126.923076923077" />
+          Size="116.8,41.6"
+          Id="Package\VehiclesToStage\Vehicles"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
+          TopLeft="95.0000005960464,191.529413609356" />
         <EdgeLayout
-          Id="Package\CasualtiesToStage.Paths[Flat File Source Output]"
-          TopLeft="435.030769230769,65.0615384615385">
+          Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
+          TopLeft="194.600000596046,233.129413609356">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="22.5384615384615,61.8615384615385"
+              EndConnector="35.3999994039537,72.870586390644"
               Start="0,0"
-              End="22.5384615384615,54.3615384615385">
+              End="35.3999994039537,65.370586390644">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.9307692307692" />
+                    End="0,32.435293195322" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.9307692307692"
-                    Point2="0,30.9307692307692"
-                    Point3="4,30.9307692307692" />
+                    Point1="0,32.435293195322"
+                    Point2="0,36.435293195322"
+                    Point3="4,36.435293195322" />
                   <mssgle:LineSegment
-                    End="18.5384615384615,30.9307692307692" />
+                    End="31.3999994039537,36.435293195322" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.5384615384615,30.9307692307692"
-                    Point2="22.5384615384615,30.9307692307692"
-                    Point3="22.5384615384615,34.9307692307692" />
+                    Point1="31.3999994039537,36.435293195322"
+                    Point2="35.3999994039537,36.435293195322"
+                    Point3="35.3999994039537,40.435293195322" />
                   <mssgle:LineSegment
-                    End="22.5384615384615,54.3615384615385" />
+                    End="35.3999994039537,65.370586390644" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4717,24 +5482,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,41.6"
-          Id="Package\CasualtiesToStage\CasualtiesToStage"
-          TopLeft="373.192307692308,235.5" />
         <EdgeLayout
-          Id="Package\CasualtiesToStage.Paths[OLE DB Command Output]"
-          TopLeft="456.380769230769,168.523076923077">
+          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
+          TopLeft="118.4,101.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66.9769230769231"
+              EndConnector="76.2000005960464,89.929413609356"
               Start="0,0"
-              End="0,59.4769230769231">
+              End="76.2000005960464,82.429413609356">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.4769230769231" />
+                    End="0,40.964706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.964706804678"
+                    Point2="0,44.964706804678"
+                    Point3="4,44.964706804678" />
+                  <mssgle:LineSegment
+                    End="72.2000005960464,44.964706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.2000005960464,44.964706804678"
+                    Point2="76.2000005960464,44.964706804678"
+                    Point3="76.2000005960464,48.964706804678" />
+                  <mssgle:LineSegment
+                    End="76.2000005960464,82.429413609356" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4747,7 +5520,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CasualtiesToStage\CasualtiesToStage">
+    design-time-name="Package\VehiclesToStage\Vehicle_Stage">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
