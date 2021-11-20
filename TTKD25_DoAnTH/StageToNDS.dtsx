@@ -11,12 +11,1409 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="StageToNDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{C3E27AC5-7592-4785-8640-28ACB1599A4F}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{7D2EFD3F-28FE-4056-881E-E1B454939B85}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{647F098B-4B77-4BF8-A169-6FC98BE640E5}"
+      DTS:ObjectName="LocalHost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.PP_NDS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0D13DDB6-89CC-42CA-8791-E059DC38FDD2}"
+      DTS:ObjectName="LocalHost.PP_NDS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=PP_NDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{55F9776F-72E5-4B82-A6B7-CE9DAFCBDDFC}"
+      DTS:ObjectName="LocalHost.PP_Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=PP_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\AccidentStageToNDS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B76B2571-89B9-4EE8-B114-2C426B6354EA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="AccidentStageToNDS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\AccidentStageToNDS\AccidentStageToNDS"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="AccidentStageToNDS"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Accident_Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AccidentStageToNDS\AccidentStageToNDS.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Index]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Accident_Index]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Index]"
+                      name="Accident_Index"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Location_Easting_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Location_Easting_OSGR]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Location_Easting_OSGR]"
+                      name="Location_Easting_OSGR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Location_Northing_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Location_Northing_OSGR]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Location_Northing_OSGR]"
+                      name="Location_Northing_OSGR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Longitude]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Longitude]"
+                      name="Longitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Latitude]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Latitude]"
+                      name="Latitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Police_Force]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Police_Force]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Police_Force]"
+                      name="Police_Force"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Accident_Severity]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Severity]"
+                      name="Accident_Severity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Number_of_Vehicles]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Number_of_Vehicles]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Number_of_Vehicles]"
+                      name="Number_of_Vehicles"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Number_of_Casualties]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Number_of_Casualties]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Number_of_Casualties]"
+                      name="Number_of_Casualties"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Day_of_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Day_of_Week]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Day_of_Week]"
+                      name="Day_of_Week"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Time]"
+                      name="Time"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Local_Authority_(District)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Local_Authority_(District)]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Local_Authority_(District)]"
+                      name="Local_Authority_(District)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Local_Authority_(Highway)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Local_Authority_(Highway)]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Local_Authority_(Highway)]"
+                      name="Local_Authority_(Highway)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[1st_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[1st_Road_Class]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[1st_Road_Class]"
+                      name="1st_Road_Class"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[1st_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[1st_Road_Number]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[1st_Road_Number]"
+                      name="1st_Road_Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Road_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Road_Type]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Road_Type]"
+                      name="Road_Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Speed_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Speed_limit]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Speed_limit]"
+                      name="Speed_limit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Junction_Detail]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Junction_Detail]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Junction_Detail]"
+                      name="Junction_Detail"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Junction_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Junction_Control]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Junction_Control]"
+                      name="Junction_Control"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[2nd_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[2nd_Road_Class]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[2nd_Road_Class]"
+                      name="2nd_Road_Class"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[2nd_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[2nd_Road_Number]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[2nd_Road_Number]"
+                      name="2nd_Road_Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Pedestrian_Crossing-Human_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Pedestrian_Crossing-Human_Control]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Pedestrian_Crossing-Human_Control]"
+                      name="Pedestrian_Crossing-Human_Control"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Pedestrian_Crossing-Physical_Facilities]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Pedestrian_Crossing-Physical_Facilities]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Pedestrian_Crossing-Physical_Facilities]"
+                      name="Pedestrian_Crossing-Physical_Facilities"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Light_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Light_Conditions]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Light_Conditions]"
+                      name="Light_Conditions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Weather_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Weather_Conditions]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Weather_Conditions]"
+                      name="Weather_Conditions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Road_Surface_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Road_Surface_Conditions]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Road_Surface_Conditions]"
+                      name="Road_Surface_Conditions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Special_Conditions_at_Site]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Special_Conditions_at_Site]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Special_Conditions_at_Site]"
+                      name="Special_Conditions_at_Site"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Carriageway_Hazards]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Carriageway_Hazards]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Carriageway_Hazards]"
+                      name="Carriageway_Hazards"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Urban_or_Rural_Area]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Urban_or_Rural_Area]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Urban_or_Rural_Area]"
+                      name="Urban_or_Rural_Area"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      name="Did_Police_Officer_Attend_Scene_of_Accident"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[LSOA_of_Accident_Location]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[LSOA_of_Accident_Location]"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[LSOA_of_Accident_Location]"
+                      name="LSOA_of_Accident_Location"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Accident_Index]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Accident_Index" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Location_Easting_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Location_Easting_OSGR" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Location_Northing_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Location_Northing_OSGR" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Police_Force]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Police_Force" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Accident_Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Accident_Severity" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Number_of_Vehicles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number_of_Vehicles" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Number_of_Casualties]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number_of_Casualties" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Day_of_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Day_of_Week" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Time" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Local_Authority_(District)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Local_Authority_(District)" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Local_Authority_(Highway)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Local_Authority_(Highway)" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[1st_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="1st_Road_Class" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[1st_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="1st_Road_Number" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Road_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Road_Type" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Speed_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Speed_limit" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Junction_Detail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Junction_Detail" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Junction_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Junction_Control" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[2nd_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="2nd_Road_Class" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[2nd_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="2nd_Road_Number" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Pedestrian_Crossing-Human_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pedestrian_Crossing-Human_Control" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Pedestrian_Crossing-Physical_Facilities]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pedestrian_Crossing-Physical_Facilities" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Light_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Light_Conditions" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Weather_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Weather_Conditions" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Road_Surface_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Road_Surface_Conditions" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Special_Conditions_at_Site]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Special_Conditions_at_Site" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Carriageway_Hazards]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Carriageway_Hazards" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Urban_or_Rural_Area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Urban_or_Rural_Area" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Did_Police_Officer_Attend_Scene_of_Accident" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].ExternalColumns[LSOA_of_Accident_Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LSOA_of_Accident_Location" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Accident_Index]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Accident_Index]"
+                      name="Accident_Index" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Location_Easting_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Location_Easting_OSGR]"
+                      name="Location_Easting_OSGR" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Location_Northing_OSGR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Location_Northing_OSGR]"
+                      name="Location_Northing_OSGR" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Longitude]"
+                      name="Longitude" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Latitude]"
+                      name="Latitude" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Police_Force]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Police_Force]"
+                      name="Police_Force" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Accident_Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Accident_Severity]"
+                      name="Accident_Severity" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Number_of_Vehicles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Number_of_Vehicles]"
+                      name="Number_of_Vehicles" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Number_of_Casualties]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Number_of_Casualties]"
+                      name="Number_of_Casualties" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Day_of_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Day_of_Week]"
+                      name="Day_of_Week" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      name="Time" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Local_Authority_(District)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Local_Authority_(District)]"
+                      name="Local_Authority_(District)" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Local_Authority_(Highway)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Local_Authority_(Highway)]"
+                      name="Local_Authority_(Highway)" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[1st_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[1st_Road_Class]"
+                      name="1st_Road_Class" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[1st_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[1st_Road_Number]"
+                      name="1st_Road_Number" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Road_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Road_Type]"
+                      name="Road_Type" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Speed_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Speed_limit]"
+                      name="Speed_limit" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Junction_Detail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Junction_Detail]"
+                      name="Junction_Detail" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Junction_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Junction_Control]"
+                      name="Junction_Control" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[2nd_Road_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[2nd_Road_Class]"
+                      name="2nd_Road_Class" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[2nd_Road_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[2nd_Road_Number]"
+                      name="2nd_Road_Number" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Pedestrian_Crossing-Human_Control]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Pedestrian_Crossing-Human_Control]"
+                      name="Pedestrian_Crossing-Human_Control" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Pedestrian_Crossing-Physical_Facilities]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Pedestrian_Crossing-Physical_Facilities]"
+                      name="Pedestrian_Crossing-Physical_Facilities" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Light_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Light_Conditions]"
+                      name="Light_Conditions" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Weather_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Weather_Conditions]"
+                      name="Weather_Conditions" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Road_Surface_Conditions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Road_Surface_Conditions]"
+                      name="Road_Surface_Conditions" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Special_Conditions_at_Site]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Special_Conditions_at_Site]"
+                      name="Special_Conditions_at_Site" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Carriageway_Hazards]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Carriageway_Hazards]"
+                      name="Carriageway_Hazards" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Urban_or_Rural_Area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Urban_or_Rural_Area]"
+                      name="Urban_or_Rural_Area" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[Did_Police_Officer_Attend_Scene_of_Accident]"
+                      name="Did_Police_Officer_Attend_Scene_of_Accident" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[LSOA_of_Accident_Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[LSOA_of_Accident_Location]"
+                      name="LSOA_of_Accident_Location" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add CreatedDate And UpdateDate"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output].Columns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output].Columns[CreatedDate]"
+                      name="CreatedDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output].Columns[UpdatedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output].Columns[UpdatedDate]"
+                      name="UpdatedDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentStageToNDS\Add Data"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Add Data"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AccidentStageToNDS\Add Data.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\AccidentStageToNDS\Add Data.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add Data.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add Data.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentStageToNDS\Add UpdateDate"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add UpdateDate"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\AccidentStageToNDS\Add UpdateDate.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add UpdateDate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Output].Columns[UpdatedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Output].Columns[UpdatedDate]"
+                      name="UpdatedDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Add UpdateDate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentStageToNDS\Lookup Accident_Index"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Accident_Index"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select [Accident_Index] from [Accident_NDS]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select [Accident_Index] from [Accident_NDS]) [refTable]
+where [refTable].[Accident_Index] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Accident_Index" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Index]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AccidentStageToNDS\Lookup Accident_Index.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_NDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_NDS]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input].Columns[Accident_Index]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Accident_Index"
+                      lineageId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output].Columns[Accident_Index]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Accident_Index</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentStageToNDS\Updated Data"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Updated Data"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AccidentStageToNDS\Updated Data.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\AccidentStageToNDS\Updated Data.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Updated Data.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\AccidentStageToNDS\Updated Data.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentStageToNDS\Updated Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\AccidentStageToNDS.Paths[Derived Column Output]"
+              endId="Package\AccidentStageToNDS\Updated Data.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\AccidentStageToNDS\Add UpdateDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\AccidentStageToNDS.Paths[Derived Column Output1]"
+              endId="Package\AccidentStageToNDS\Add Data.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\AccidentStageToNDS.Paths[Lookup Match Output]"
+              endId="Package\AccidentStageToNDS\Add UpdateDate.Inputs[Derived Column Input]"
+              name="Lookup Match Output"
+              startId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\AccidentStageToNDS.Paths[Lookup No Match Output]"
+              endId="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\AccidentStageToNDS\Lookup Accident_Index.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\AccidentStageToNDS.Paths[OLE DB Source Output]"
+              endId="Package\AccidentStageToNDS\Lookup Accident_Index.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\AccidentStageToNDS\AccidentStageToNDS.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -24,5 +1421,259 @@
 <Objects
   Version="8">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\AccidentStageToNDS"
+          TopLeft="139.285716657736,50.470588943125" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\AccidentStageToNDS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\AccidentStageToNDS\AccidentStageToNDS"
+          TopLeft="230.714289643327,30.5882357231061" />
+        <NodeLayout
+          Size="188,41.6"
+          Id="Package\AccidentStageToNDS\Lookup Accident_Index"
+          TopLeft="181.428574518282,142.235296112443" />
+        <EdgeLayout
+          Id="Package\AccidentStageToNDS.Paths[OLE DB Source Output]"
+          TopLeft="319.114289643327,72.1882357231061">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-43.685715125045,70.0470603893373"
+              Start="0,0"
+              End="-43.685715125045,62.5470603893373">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.0235301946686" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.0235301946686"
+                    Point2="0,35.0235301946686"
+                    Point3="-4,35.0235301946686" />
+                  <mssgle:LineSegment
+                    End="-39.685715125045,35.0235301946686" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-39.685715125045,35.0235301946686"
+                    Point2="-43.685715125045,35.0235301946686"
+                    Point3="-43.685715125045,39.0235301946686" />
+                  <mssgle:LineSegment
+                    End="-43.685715125045,62.5470603893373" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\AccidentStageToNDS\Add UpdateDate"
+          TopLeft="37.8571435018462,242.411768105616" />
+        <NodeLayout
+          Size="239.2,41.6"
+          Id="Package\AccidentStageToNDS\Add CreatedDate And UpdateDate"
+          TopLeft="325.000005534717,240.788238457908" />
+        <EdgeLayout
+          Id="Package\AccidentStageToNDS.Paths[Lookup Match Output]"
+          TopLeft="245.428574518282,183.835296112443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.971431016435,58.5764719931725"
+              Start="0,0"
+              End="-129.971431016435,51.0764719931725">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.72717852888" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.72717852888"
+                    Point2="0,23.72717852888"
+                    Point3="-4,23.72717852888" />
+                  <mssgle:LineSegment
+                    End="-125.971431016435,23.72717852888" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.971431016435,23.72717852888"
+                    Point2="-129.971431016435,23.72717852888"
+                    Point3="-129.971431016435,27.72717852888" />
+                  <mssgle:LineSegment
+                    End="-129.971431016435,51.0764719931725" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.177102226968,28.72717852888,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AccidentStageToNDS.Paths[Lookup No Match Output]"
+          TopLeft="305.428574518282,183.835296112443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.171431016436,56.9529423454642"
+              Start="0,0"
+              End="139.171431016436,49.4529423454642">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.0695462665172" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.0695462665172"
+                    Point2="0,23.0695462665172"
+                    Point3="4,23.0695462665172" />
+                  <mssgle:LineSegment
+                    End="135.171431016436,23.0695462665172" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.171431016436,23.0695462665172"
+                    Point2="139.171431016436,23.0695462665172"
+                    Point3="139.171431016436,27.0695462665172" />
+                  <mssgle:LineSegment
+                    End="139.171431016436,49.4529423454642" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.7793287894678,28.0695462665172,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\AccidentStageToNDS\Updated Data"
+          TopLeft="30.7142862373469,347.352945991866" />
+        <EdgeLayout
+          Id="Package\AccidentStageToNDS.Paths[Derived Column Output]"
+          TopLeft="115.457143501846,284.011768105616">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.1428572644993,63.3411778862501"
+              Start="0,0"
+              End="-13.1428572644993,55.8411778862501">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.670588943125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.670588943125"
+                    Point2="0,31.670588943125"
+                    Point3="-4,31.670588943125" />
+                  <mssgle:LineSegment
+                    End="-9.1428572644993,31.670588943125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.1428572644993,31.670588943125"
+                    Point2="-13.1428572644993,31.670588943125"
+                    Point3="-13.1428572644993,35.670588943125" />
+                  <mssgle:LineSegment
+                    End="-13.1428572644993,55.8411778862501" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121.6,41.6"
+          Id="Package\AccidentStageToNDS\Add Data"
+          TopLeft="342.857148695965,343.564709174839" />
+        <EdgeLayout
+          Id="Package\AccidentStageToNDS.Paths[Derived Column Output1]"
+          TopLeft="444.600005534717,282.388238457908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-40.9428568387518,61.1764707169318"
+              Start="0,0"
+              End="-40.9428568387518,53.6764707169318">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5882353584659" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5882353584659"
+                    Point2="0,30.5882353584659"
+                    Point3="-4,30.5882353584659" />
+                  <mssgle:LineSegment
+                    End="-36.9428568387518,30.5882353584659" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.9428568387518,30.5882353584659"
+                    Point2="-40.9428568387518,30.5882353584659"
+                    Point3="-40.9428568387518,34.5882353584659" />
+                  <mssgle:LineSegment
+                    End="-40.9428568387518,53.6764707169318" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AccidentStageToNDS\AccidentStageToNDS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\AccidentStageToNDS\Lookup Accident_Index">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

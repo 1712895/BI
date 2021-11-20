@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{32F132AF-8831-43B5-B759-458C2420922B}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{22D4386C-AC6C-49B5-A163-706B8A24EDC9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1989,7 +1989,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Accident_Stage]</property>
+                  name="OpenRowset">[dbo].[Accident_Stage]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2023,7 +2023,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions">TABLOCK</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -3152,7 +3152,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3164,7 +3164,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions">TABLOCK</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -6331,13 +6331,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="159.2,41.6"
-          Id="Package\CasualtieToStage"
-          TopLeft="488.57143689175,54.2941184085134" />
-        <NodeLayout
           Size="156.8,41.6"
           Id="Package\AccidentToStage"
           TopLeft="82.1428585417418,61.1764714462122" />
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\CasualtieToStage"
+          TopLeft="488.57143689175,54.2941184085134" />
         <NodeLayout
           Size="321.6,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
@@ -6354,98 +6354,14 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\CasualtieToStage">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="208.8,41.6"
-          Id="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
-          TopLeft="238.571432634276,140.705884326288" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\CasualtieToStage\Casualties"
-          TopLeft="202.85714631178,8.41176482385417" />
-        <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[Flat File Source Output]"
-          TopLeft="265.65714631178,50.0117648238542">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77.3142863224959,90.6941195024338"
-              Start="0,0"
-              End="77.3142863224959,83.1941195024338">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.3470597512169"
-                    Point2="0,45.3470597512169"
-                    Point3="4,45.3470597512169" />
-                  <mssgle:LineSegment
-                    End="73.3142863224959,45.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="73.3142863224959,45.3470597512169"
-                    Point2="77.3142863224959,45.3470597512169"
-                    Point3="77.3142863224959,49.3470597512169" />
-                  <mssgle:LineSegment
-                    End="77.3142863224959,83.1941195024338" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\CasualtieToStage\Casultie_Stage"
-          TopLeft="302.857148014769,256.941180074091" />
-        <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
-          TopLeft="342.971432634276,182.305884326288">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="33.8857153804934,74.6352957478034"
-              Start="0,0"
-              End="33.8857153804934,67.1352957478034">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.3176478739017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.3176478739017"
-                    Point2="0,37.3176478739017"
-                    Point3="4,37.3176478739017" />
-                  <mssgle:LineSegment
-                    End="29.8857153804934,37.3176478739017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.8857153804934,37.3176478739017"
-                    Point2="33.8857153804934,37.3176478739017"
-                    Point3="33.8857153804934,41.3176478739017" />
-                  <mssgle:LineSegment
-                    End="33.8857153804934,67.1352957478034" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\AccidentToStage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\AccidentToStage\Accident_Stage"
+          TopLeft="359.5,282.5" />
         <NodeLayout
           Size="210.4,41.6"
           Id="Package\AccidentToStage\TRUNCATE Accidents_Stage"
@@ -6488,10 +6404,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\AccidentToStage\Accident_Stage"
-          TopLeft="359.5,282.5" />
         <EdgeLayout
           Id="Package\AccidentToStage.Paths[OLE DB Command Output]"
           TopLeft="455.969230769231,168.523076923077">
@@ -6529,45 +6441,62 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AccidentToStage\Accident_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
+    design-time-name="Package\CasualtieToStage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="117.6,41.6"
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
-          TopLeft="169.5,137.5" />
+          Size="208.8,41.6"
+          Id="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
+          TopLeft="238.571432634276,140.705884326288" />
         <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA"
-          TopLeft="126,249" />
+          Size="125.6,41.6"
+          Id="Package\CasualtieToStage\Casualties"
+          TopLeft="202.85714631178,8.41176482385417" />
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\CasualtieToStage\Casultie_Stage"
+          TopLeft="303.857148014769,256.941180074091" />
         <EdgeLayout
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
-          TopLeft="228.3,179.1">
+          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
+          TopLeft="342.971432634276,182.305884326288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15.9,69.9000000000001"
+              EndConnector="34.885715380493,74.635295747803"
               Start="0,0"
-              End="-15.9,62.4000000000001">
+              End="34.885715380493,67.135295747803">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.95" />
+                    End="0,33.3176478739015" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.95"
-                    Point2="0,34.95"
-                    Point3="-4,34.95" />
+                    Point1="0,33.3176478739015"
+                    Point2="0,37.3176478739015"
+                    Point3="4,37.3176478739015" />
                   <mssgle:LineSegment
-                    End="-11.9,34.95" />
+                    End="30.885715380493,37.3176478739015" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11.9,34.95"
-                    Point2="-15.9,34.95"
-                    Point3="-15.9,38.95" />
+                    Point1="30.885715380493,37.3176478739015"
+                    Point2="34.885715380493,37.3176478739015"
+                    Point3="34.885715380493,41.3176478739015" />
                   <mssgle:LineSegment
-                    End="-15.9,62.4000000000001" />
+                    End="34.885715380493,67.135295747803" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6576,6 +6505,69 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CasualtieToStage.Paths[Flat File Source Output]"
+          TopLeft="265.65714631178,50.0117648238542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.3142863224959,90.6941195024338"
+              Start="0,0"
+              End="77.3142863224959,83.1941195024338">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.3470597512169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.3470597512169"
+                    Point2="0,45.3470597512169"
+                    Point3="4,45.3470597512169" />
+                  <mssgle:LineSegment
+                    End="73.3142863224959,45.3470597512169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.3142863224959,45.3470597512169"
+                    Point2="77.3142863224959,45.3470597512169"
+                    Point3="77.3142863224959,49.3470597512169" />
+                  <mssgle:LineSegment
+                    End="77.3142863224959,83.1941195024338" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CasualtieToStage\Casultie_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA"
+          TopLeft="126,249" />
+        <NodeLayout
+          Size="117.6,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
+          TopLeft="169.5,137.5" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage"
@@ -6611,12 +6603,63 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
+          TopLeft="228.3,179.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.9,69.9000000000001"
+              Start="0,0"
+              End="-15.9,62.4000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.95"
+                    Point2="0,34.95"
+                    Point3="-4,34.95" />
+                  <mssgle:LineSegment
+                    End="-11.9,34.95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.9,34.95"
+                    Point2="-15.9,34.95"
+                    Point3="-15.9,38.95" />
+                  <mssgle:LineSegment
+                    End="-15.9,62.4000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\PostcodeToStage">
     <LayoutInfo>
@@ -6724,51 +6767,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="199.2,41.6"
-          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
-          TopLeft="95.0000005960464,191.529413609356" />
-        <NodeLayout
           Size="116.8,41.6"
           Id="Package\VehiclesToStage\Vehicles"
           TopLeft="90.5,67.5" />
-        <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
-          TopLeft="148.9,109.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.7000005960464,82.429413609356"
-              Start="0,0"
-              End="45.7000005960464,74.929413609356">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.214706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.214706804678"
-                    Point2="0,41.214706804678"
-                    Point3="4,41.214706804678" />
-                  <mssgle:LineSegment
-                    End="41.7000005960464,41.214706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.7000005960464,41.214706804678"
-                    Point2="45.7000005960464,41.214706804678"
-                    Point3="45.7000005960464,45.214706804678" />
-                  <mssgle:LineSegment
-                    End="45.7000005960464,74.929413609356" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="144,41.6"
           Id="Package\VehiclesToStage\Vehicle_Stage"
           TopLeft="217,325" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
+          TopLeft="95.0000005960464,191.529413609356" />
         <EdgeLayout
           Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
           TopLeft="194.600000596046,233.129413609356">
@@ -6803,50 +6812,45 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
+          TopLeft="148.9,109.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.7000005960464,82.429413609356"
+              Start="0,0"
+              End="45.7000005960464,74.929413609356">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.214706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.214706804678"
+                    Point2="0,41.214706804678"
+                    Point3="4,41.214706804678" />
+                  <mssgle:LineSegment
+                    End="41.7000005960464,41.214706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.7000005960464,41.214706804678"
+                    Point2="45.7000005960464,41.214706804678"
+                    Point3="45.7000005960464,45.214706804678" />
+                  <mssgle:LineSegment
+                    End="45.7000005960464,74.929413609356" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CasualtieToStage\Casultie_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\VehiclesToStage\Vehicle_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\AccidentToStage\Accident_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

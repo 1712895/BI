@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{32F132AF-8831-43B5-B759-458C2420922B}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{8B16560B-6B51-4054-B24E-D00223B1613B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -474,6 +474,176 @@
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Home_Area_Type"
               DTS:DTSID="{A195F8CC-1C0A-4D8B-AC64-8284FD3E3818}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{28DD0FEC-13B0-4F8C-956D-77F429CE6665}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\New Text Document.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Accident_Index"
+              DTS:DTSID="{A1231CCE-61F2-4D53-BB25-D8099A7DAF67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Reference"
+              DTS:DTSID="{366CEE84-0383-4B67-89D5-8CF60B037AA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Casualty_Reference"
+              DTS:DTSID="{7CCE6ED8-7212-4FA1-8F69-FE32160DB996}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Casualty_Class"
+              DTS:DTSID="{63EC8E95-1F19-41C8-8D6D-E2169E392E0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sex_of_Casualty"
+              DTS:DTSID="{BE84F1E7-FA53-4499-ACAA-DF2FA59A3E73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age_of_Casualty"
+              DTS:DTSID="{E32086F9-1DEC-43F9-A75C-3CE9FEEAAB83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age_Band_of_Casualty"
+              DTS:DTSID="{FC7B755A-5A37-4572-AAE5-C3E357D86E2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Casualty_Severity"
+              DTS:DTSID="{A2CEC3E3-1483-44F1-8E8B-9A119CCBD372}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pedestrian_Location"
+              DTS:DTSID="{B0CADAB1-35B4-4085-BA1C-1B9B01D3CAED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pedestrian_Movement"
+              DTS:DTSID="{843F7C69-6A61-4A2C-BB24-7DF1A7258ECA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Car_Passenger"
+              DTS:DTSID="{ECF6DB6E-9974-4236-BA6B-B26ABE500A0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bus_or_Coach_Passenger"
+              DTS:DTSID="{B45FE4FE-6C0F-46C8-8078-87E6272B846B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pedestrian_Road_Maintenance_Worker"
+              DTS:DTSID="{90C560B5-E3D0-4974-99C1-C82D2975BF3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Casualty_Type"
+              DTS:DTSID="{FB54C8A6-2800-42C4-AB3D-C6EE8103A147}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Casualty_Home_Area_Type"
+              DTS:DTSID="{E2E684BD-3B17-4B15-8BDF-4DC7DD8A2B3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{47CF4BA0-379E-4ED0-9E54-842013693187}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{4A0C93F7-CE1A-4D56-92CB-7433E2DC99A0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1989,7 +2159,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Accident_Stage]</property>
+                  name="OpenRowset">[dbo].[Accident_Stage]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2023,7 +2193,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions">TABLOCK</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -3152,7 +3322,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3164,7 +3334,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions">TABLOCK</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -3182,7 +3352,7 @@
                 <input
                   refId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="RedirectRow"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
@@ -3428,6 +3598,279 @@
               </outputs>
             </component>
             <component
+              refId="Package\CasualtieToStage\Flat File Destination 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CasualtieToStage\Flat File Destination 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Accident_Index]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Accident_Index"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Accident_Index]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Accident_Index]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Vehicle_Reference]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Vehicle_Reference"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle_Reference]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Vehicle_Reference]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Reference]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Casualty_Reference"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Reference]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Reference]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Class]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Casualty_Class"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Class]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Class]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Sex_of_Casualty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sex_of_Casualty"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Sex_of_Casualty]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Sex_of_Casualty]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Age_of_Casualty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Age_of_Casualty"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_of_Casualty]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Age_of_Casualty]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Age_Band_of_Casualty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Age_Band_of_Casualty"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_Band_of_Casualty]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Age_Band_of_Casualty]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Severity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Casualty_Severity"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Severity]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Severity]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Location]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pedestrian_Location"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Location]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Location]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Movement]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pedestrian_Movement"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Movement]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Movement]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Car_Passenger]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Car_Passenger"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Car_Passenger]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Car_Passenger]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Bus_or_Coach_Passenger]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Bus_or_Coach_Passenger"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Bus_or_Coach_Passenger]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Bus_or_Coach_Passenger]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Road_Maintenance_Worker]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pedestrian_Road_Maintenance_Worker"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Road_Maintenance_Worker]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Road_Maintenance_Worker]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Casualty_Type"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Type]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Type]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Home_Area_Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Casualty_Home_Area_Type"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Home_Area_Type]"
+                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Home_Area_Type]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Accident_Index]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Accident_Index" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle_Reference]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Vehicle_Reference" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Reference]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Casualty_Reference" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Class]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Casualty_Class" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Sex_of_Casualty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sex_of_Casualty" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_of_Casualty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age_of_Casualty" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_Band_of_Casualty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age_Band_of_Casualty" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Casualty_Severity" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pedestrian_Location" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Movement]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pedestrian_Movement" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Car_Passenger]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Car_Passenger" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Bus_or_Coach_Passenger]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Bus_or_Coach_Passenger" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Road_Maintenance_Worker]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pedestrian_Road_Maintenance_Worker" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Casualty_Type" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Home_Area_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Casualty_Home_Area_Type" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
               refId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
@@ -3514,6 +3957,11 @@
               endId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input]"
               name="OLE DB Command Output"
               startId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage.Outputs[OLE DB Command Output]" />
+            <path
+              refId="Package\CasualtieToStage.Paths[OLE DB Destination Error Output]"
+              endId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input]"
+              name="OLE DB Destination Error Output"
+              startId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6331,13 +6779,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="159.2,41.6"
-          Id="Package\CasualtieToStage"
-          TopLeft="488.57143689175,54.2941184085134" />
-        <NodeLayout
           Size="156.8,41.6"
           Id="Package\AccidentToStage"
           TopLeft="82.1428585417418,61.1764714462122" />
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\CasualtieToStage"
+          TopLeft="488.57143689175,54.2941184085134" />
         <NodeLayout
           Size="321.6,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
@@ -6354,98 +6802,14 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\CasualtieToStage">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="208.8,41.6"
-          Id="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
-          TopLeft="238.571432634276,140.705884326288" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\CasualtieToStage\Casualties"
-          TopLeft="202.85714631178,8.41176482385417" />
-        <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[Flat File Source Output]"
-          TopLeft="265.65714631178,50.0117648238542">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77.3142863224959,90.6941195024338"
-              Start="0,0"
-              End="77.3142863224959,83.1941195024338">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.3470597512169"
-                    Point2="0,45.3470597512169"
-                    Point3="4,45.3470597512169" />
-                  <mssgle:LineSegment
-                    End="73.3142863224959,45.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="73.3142863224959,45.3470597512169"
-                    Point2="77.3142863224959,45.3470597512169"
-                    Point3="77.3142863224959,49.3470597512169" />
-                  <mssgle:LineSegment
-                    End="77.3142863224959,83.1941195024338" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\CasualtieToStage\Casultie_Stage"
-          TopLeft="302.857148014769,256.941180074091" />
-        <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
-          TopLeft="342.971432634276,182.305884326288">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="33.8857153804934,74.6352957478034"
-              Start="0,0"
-              End="33.8857153804934,67.1352957478034">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.3176478739017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.3176478739017"
-                    Point2="0,37.3176478739017"
-                    Point3="4,37.3176478739017" />
-                  <mssgle:LineSegment
-                    End="29.8857153804934,37.3176478739017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.8857153804934,37.3176478739017"
-                    Point2="33.8857153804934,37.3176478739017"
-                    Point3="33.8857153804934,41.3176478739017" />
-                  <mssgle:LineSegment
-                    End="33.8857153804934,67.1352957478034" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\AccidentToStage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\AccidentToStage\Accident_Stage"
+          TopLeft="359.5,282.5" />
         <NodeLayout
           Size="210.4,41.6"
           Id="Package\AccidentToStage\TRUNCATE Accidents_Stage"
@@ -6488,10 +6852,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\AccidentToStage\Accident_Stage"
-          TopLeft="359.5,282.5" />
         <EdgeLayout
           Id="Package\AccidentToStage.Paths[OLE DB Command Output]"
           TopLeft="455.969230769231,168.523076923077">
@@ -6529,45 +6889,62 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AccidentToStage\Accident_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
+    design-time-name="Package\CasualtieToStage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="117.6,41.6"
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
-          TopLeft="169.5,137.5" />
+          Size="208.8,41.6"
+          Id="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
+          TopLeft="238.571432634276,140.705884326288" />
         <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA"
-          TopLeft="126,249" />
+          Size="125.6,41.6"
+          Id="Package\CasualtieToStage\Casualties"
+          TopLeft="202.85714631178,8.41176482385417" />
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\CasualtieToStage\Casultie_Stage"
+          TopLeft="303.857148014769,256.941180074091" />
         <EdgeLayout
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
-          TopLeft="228.3,179.1">
+          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
+          TopLeft="342.971432634276,182.305884326288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15.9,69.9000000000001"
+              EndConnector="34.885715380493,74.635295747803"
               Start="0,0"
-              End="-15.9,62.4000000000001">
+              End="34.885715380493,67.135295747803">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.95" />
+                    End="0,33.3176478739015" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.95"
-                    Point2="0,34.95"
-                    Point3="-4,34.95" />
+                    Point1="0,33.3176478739015"
+                    Point2="0,37.3176478739015"
+                    Point3="4,37.3176478739015" />
                   <mssgle:LineSegment
-                    End="-11.9,34.95" />
+                    End="30.885715380493,37.3176478739015" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11.9,34.95"
-                    Point2="-15.9,34.95"
-                    Point3="-15.9,38.95" />
+                    Point1="30.885715380493,37.3176478739015"
+                    Point2="34.885715380493,37.3176478739015"
+                    Point3="34.885715380493,41.3176478739015" />
                   <mssgle:LineSegment
-                    End="-15.9,62.4000000000001" />
+                    End="34.885715380493,67.135295747803" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6576,6 +6953,109 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CasualtieToStage.Paths[Flat File Source Output]"
+          TopLeft="265.65714631178,50.0117648238542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.3142863224959,90.6941195024338"
+              Start="0,0"
+              End="77.3142863224959,83.1941195024338">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.3470597512169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.3470597512169"
+                    Point2="0,45.3470597512169"
+                    Point3="4,45.3470597512169" />
+                  <mssgle:LineSegment
+                    End="73.3142863224959,45.3470597512169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.3142863224959,45.3470597512169"
+                    Point2="77.3142863224959,45.3470597512169"
+                    Point3="77.3142863224959,49.3470597512169" />
+                  <mssgle:LineSegment
+                    End="77.3142863224959,83.1941195024338" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\CasualtieToStage\Flat File Destination 1"
+          TopLeft="430,383" />
+        <EdgeLayout
+          Id="Package\CasualtieToStage.Paths[OLE DB Destination Error Output]"
+          TopLeft="377.857148014769,298.541180074091">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="142.142851985231,84.458819925909"
+              Start="0,0"
+              End="142.142851985231,76.958819925909">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.2294099629545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.2294099629545"
+                    Point2="0,42.2294099629545"
+                    Point3="4,42.2294099629545" />
+                  <mssgle:LineSegment
+                    End="138.142851985231,42.2294099629545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="138.142851985231,42.2294099629545"
+                    Point2="142.142851985231,42.2294099629545"
+                    Point3="142.142851985231,46.2294099629545" />
+                  <mssgle:LineSegment
+                    End="142.142851985231,76.958819925909" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.1374802573845,47.2294099629545,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CasualtieToStage\Casultie_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA"
+          TopLeft="126,249" />
+        <NodeLayout
+          Size="117.6,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
+          TopLeft="169.5,137.5" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage"
@@ -6611,12 +7091,63 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
+          TopLeft="228.3,179.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.9,69.9000000000001"
+              Start="0,0"
+              End="-15.9,62.4000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.95"
+                    Point2="0,34.95"
+                    Point3="-4,34.95" />
+                  <mssgle:LineSegment
+                    End="-11.9,34.95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.9,34.95"
+                    Point2="-15.9,34.95"
+                    Point3="-15.9,38.95" />
+                  <mssgle:LineSegment
+                    End="-15.9,62.4000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\PostcodeToStage">
     <LayoutInfo>
@@ -6724,51 +7255,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="199.2,41.6"
-          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
-          TopLeft="95.0000005960464,191.529413609356" />
-        <NodeLayout
           Size="116.8,41.6"
           Id="Package\VehiclesToStage\Vehicles"
           TopLeft="90.5,67.5" />
-        <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
-          TopLeft="148.9,109.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.7000005960464,82.429413609356"
-              Start="0,0"
-              End="45.7000005960464,74.929413609356">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.214706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.214706804678"
-                    Point2="0,41.214706804678"
-                    Point3="4,41.214706804678" />
-                  <mssgle:LineSegment
-                    End="41.7000005960464,41.214706804678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.7000005960464,41.214706804678"
-                    Point2="45.7000005960464,41.214706804678"
-                    Point3="45.7000005960464,45.214706804678" />
-                  <mssgle:LineSegment
-                    End="45.7000005960464,74.929413609356" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="144,41.6"
           Id="Package\VehiclesToStage\Vehicle_Stage"
           TopLeft="217,325" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
+          TopLeft="95.0000005960464,191.529413609356" />
         <EdgeLayout
           Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
           TopLeft="194.600000596046,233.129413609356">
@@ -6803,50 +7300,45 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
+          TopLeft="148.9,109.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.7000005960464,82.429413609356"
+              Start="0,0"
+              End="45.7000005960464,74.929413609356">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.214706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.214706804678"
+                    Point2="0,41.214706804678"
+                    Point3="4,41.214706804678" />
+                  <mssgle:LineSegment
+                    End="41.7000005960464,41.214706804678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.7000005960464,41.214706804678"
+                    Point2="45.7000005960464,41.214706804678"
+                    Point3="45.7000005960464,45.214706804678" />
+                  <mssgle:LineSegment
+                    End="45.7000005960464,74.929413609356" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CasualtieToStage\Casultie_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\VehiclesToStage\Vehicle_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\AccidentToStage\Accident_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
