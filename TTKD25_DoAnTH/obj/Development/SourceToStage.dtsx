@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{8B16560B-6B51-4054-B24E-D00223B1613B}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{1ECB10D3-B28B-4959-9576-104B581F5CC9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\UK Accidents Data 2011-2014\Accidents1114.csv">
+          DTS:ConnectionString="C:\College\HK9\BI\ThucHanh\filenop\SourceCode\DataSource\UK-Accidents-Data-2011-2014_v1\Accidents1114.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Accident_Index"
-              DTS:DTSID="{783AB6E5-9562-4573-BD76-81AF363D7B3F}"
+              DTS:DTSID="{7CBD3C5C-8D11-4DA8-99C2-2CBC7B654089}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location_Easting_OSGR"
-              DTS:DTSID="{178A3747-454E-4B78-A176-A78C0C1B9E26}"
+              DTS:DTSID="{1FB88177-2CD0-45BE-A7AE-C38FF5D95D0F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location_Northing_OSGR"
-              DTS:DTSID="{5808002B-02F4-47BB-9E50-BDD8CACB6165}"
+              DTS:DTSID="{DC04E4DA-EA53-416C-B12C-5A4BCF35C7C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Longitude"
-              DTS:DTSID="{A5946EDE-B512-4FEB-86A6-89E7714DA1BD}"
+              DTS:DTSID="{3773503C-A5BD-4728-8685-0E0F737D8A73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Latitude"
-              DTS:DTSID="{EA05353E-1963-471D-8EE5-77F1634986FB}"
+              DTS:DTSID="{E1EE6090-775A-4F61-B14A-F3F82AC1984D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Police_Force"
-              DTS:DTSID="{FC3ABEA7-FF28-4CD3-81F2-F2853C904E8A}"
+              DTS:DTSID="{0712BBA2-7CED-48E9-BF11-4B61C98A7C05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Accident_Severity"
-              DTS:DTSID="{8F4B9A01-F2A7-4811-9BF5-9246E19EB0F8}"
+              DTS:DTSID="{B458B3C8-65EA-448C-BA62-8A6CB8AAB3EF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Number_of_Vehicles"
-              DTS:DTSID="{C077276B-B310-42B6-AD25-873975C2A072}"
+              DTS:DTSID="{7E2C6F7A-33D7-436D-B8E5-83B66DDDCF50}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Number_of_Casualties"
-              DTS:DTSID="{001F2DAB-6891-4A3D-9B6D-2CCFF5264189}"
+              DTS:DTSID="{6686D5C4-AF4E-4FD5-A000-1CB60EDEDB73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{51A53188-41CE-49B3-B98D-DD0443223DBD}"
+              DTS:DTSID="{17D3C640-5837-4CB4-9553-64439573BAFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Day_of_Week"
-              DTS:DTSID="{5BC4803B-2044-4F86-8301-9FA576C71D06}"
+              DTS:DTSID="{0CB6C0B9-B049-41AB-8321-481F93C3ABF6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Time"
-              DTS:DTSID="{00061DCA-98CB-446C-99A3-4FD7E019972E}"
+              DTS:DTSID="{F1719DD1-80F4-4DC8-A4E5-DACF9A6705E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Local_Authority_(District)"
-              DTS:DTSID="{32375F0E-4F54-4C59-93C5-C2C3B8AC8745}"
+              DTS:DTSID="{BA89E0EF-70DC-4279-84F0-08FB094C2597}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Local_Authority_(Highway)"
-              DTS:DTSID="{0CEF0549-D6BA-4B4E-B8D6-115416D8BDF7}"
+              DTS:DTSID="{7D40FBAF-19EE-41DC-AE62-ED5E22CB2203}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="1st_Road_Class"
-              DTS:DTSID="{1B48208D-E26A-4DF6-8F70-F61DB4772ED2}"
+              DTS:DTSID="{EDFA6DE7-C3FA-40C1-8214-0C98FE05610B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="1st_Road_Number"
-              DTS:DTSID="{A8623BD1-A491-4CDC-93F0-65BDE476A5B9}"
+              DTS:DTSID="{0C20665E-EEB1-481C-B04D-CE3D56C98ED5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Road_Type"
-              DTS:DTSID="{AD040506-B346-4B95-9794-7E346E983B81}"
+              DTS:DTSID="{B9BB741C-084D-411F-B4E0-FD69BA33AD9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Speed_limit"
-              DTS:DTSID="{09C4D870-CFA1-49C7-8D4F-19D13FD157E2}"
+              DTS:DTSID="{A734514F-C2E6-45AD-B19D-55CAD5756B07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +201,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Junction_Detail"
-              DTS:DTSID="{7B32353C-D248-4F98-AA97-80FFBF02FF5D}"
+              DTS:DTSID="{0EF96352-8980-41A1-9D57-43BC85F40170}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +210,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Junction_Control"
-              DTS:DTSID="{E023F501-B33C-408A-8F47-7AC75C557D68}"
+              DTS:DTSID="{347C5FE7-A1F8-4F10-9738-072A8766A780}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -219,7 +219,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="2nd_Road_Class"
-              DTS:DTSID="{F2208556-6503-474C-BFE0-86DE7B06E8D3}"
+              DTS:DTSID="{E342A8E5-0C5B-4352-9996-AE4F8B84FAF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,7 +228,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="2nd_Road_Number"
-              DTS:DTSID="{09DC74AD-78A8-4808-8EE1-E0E26E93D2B2}"
+              DTS:DTSID="{F4FFE647-1273-4867-98E6-B9A149B99E26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +237,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Pedestrian_Crossing-Human_Control"
-              DTS:DTSID="{8F09FC5E-52D9-4CD1-B2C5-7696F68C6E2F}"
+              DTS:DTSID="{1EB79EED-B653-4EA1-ABC5-05FA69584480}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -246,7 +246,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Pedestrian_Crossing-Physical_Facilities"
-              DTS:DTSID="{9332934D-FC9D-4351-A930-66E6DE12A29C}"
+              DTS:DTSID="{28791703-AC30-4E6B-800B-F68141A4C49C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +255,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Light_Conditions"
-              DTS:DTSID="{7914380C-5E99-4D08-8F54-F63683EFE5B9}"
+              DTS:DTSID="{17B60496-DC4D-4777-A025-95A5C8FD9020}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,7 +264,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Weather_Conditions"
-              DTS:DTSID="{061C9F44-B1FD-4645-90ED-5E2CF8023B52}"
+              DTS:DTSID="{9999B196-9A59-4BC5-9E93-8F942611D717}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -273,7 +273,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Road_Surface_Conditions"
-              DTS:DTSID="{EC5297C6-69D4-456C-A36B-C15432EDAB43}"
+              DTS:DTSID="{6EFEDD7F-B212-4CAE-BA5E-BAC571DB48B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -282,7 +282,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Special_Conditions_at_Site"
-              DTS:DTSID="{49884CAC-E768-44DF-851E-DA12CCC6FDD3}"
+              DTS:DTSID="{D9CC0D78-C090-455F-AED8-8F9C69618903}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -291,7 +291,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Carriageway_Hazards"
-              DTS:DTSID="{2746B408-0C24-4993-9B47-09318AED30D4}"
+              DTS:DTSID="{C9668B5B-9167-4C97-9A9D-520EBAADE184}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -300,7 +300,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Urban_or_Rural_Area"
-              DTS:DTSID="{B07CA976-0EE4-46CB-90E5-C7621F10E4E2}"
+              DTS:DTSID="{E0CE69D9-5B8D-4AC1-9F46-5C33DCA2D015}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -309,7 +309,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Did_Police_Officer_Attend_Scene_of_Accident"
-              DTS:DTSID="{D73C225B-601C-40D7-A08A-010F4DC8ED67}"
+              DTS:DTSID="{7B4A7AB4-B622-4D5D-A292-3F6010EA794B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -318,7 +318,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LSOA_of_Accident_Location"
-              DTS:DTSID="{21EB2C46-8866-458F-ACB8-BB61E03B4B39}"
+              DTS:DTSID="{6D2AB0E7-CC4A-498A-9AEB-C6CF87F60EAB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -338,7 +338,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\UK Accidents Data 2011-2014\Casualties1114.csv">
+          DTS:ConnectionString="C:\College\HK9\BI\ThucHanh\filenop\SourceCode\DataSource\UK-Accidents-Data-2011-2014_v1\Casualties1114.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +347,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Accident_Index"
-              DTS:DTSID="{843D6925-91C5-4CC5-AE4C-A364E4BE6CC0}"
+              DTS:DTSID="{6C0B4C3F-ABE9-4327-BAA9-0D0B03DA9AA4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -356,7 +356,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Reference"
-              DTS:DTSID="{C60E5683-D11F-4CA3-8B35-D0DF62F1D62F}"
+              DTS:DTSID="{64DB95B2-24D2-4197-9C71-1668968E22C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -365,7 +365,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Reference"
-              DTS:DTSID="{C90F8D15-548E-485E-BDF3-ABFF9DC48EFE}"
+              DTS:DTSID="{1BEBCE02-D2B3-43DD-87D5-445804EED68F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -374,7 +374,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Class"
-              DTS:DTSID="{E8435D59-E4D6-4453-B076-5E79B4D8AABA}"
+              DTS:DTSID="{19780A6C-B749-4DC6-BE3F-9812A2EA7535}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -383,7 +383,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sex_of_Casualty"
-              DTS:DTSID="{FB611F78-28F9-41AA-B3F2-545EA071B374}"
+              DTS:DTSID="{E6024C68-ABB7-4AAE-8F61-22426538C118}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -392,7 +392,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age_of_Casualty"
-              DTS:DTSID="{75D0CA86-B916-4714-AD38-C1E2C55612E3}"
+              DTS:DTSID="{ADE1DC92-9E5B-4DA1-B70B-45F6F12FE593}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -401,7 +401,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age_Band_of_Casualty"
-              DTS:DTSID="{75DFEC40-046E-4D59-B26B-07C1AAEB2CE4}"
+              DTS:DTSID="{97D2959A-D584-4B8D-9251-0F0B5D3636BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -410,7 +410,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Severity"
-              DTS:DTSID="{721EBBE3-C9C0-4DED-84D6-54D3FCA86238}"
+              DTS:DTSID="{C0A1B01E-0A3C-4A93-982D-A6F0F4C78B26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +419,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Pedestrian_Location"
-              DTS:DTSID="{5802D4FF-E8A4-4315-845B-19FF8950AEBD}"
+              DTS:DTSID="{E8A809AF-26B3-4265-8880-8DA411213FFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -428,7 +428,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Pedestrian_Movement"
-              DTS:DTSID="{41EB9EE3-C8B1-48E0-9A16-4FD4F6A6DAB1}"
+              DTS:DTSID="{2ED79CDD-19DC-4438-8BF4-C66A6371F473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -437,7 +437,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Car_Passenger"
-              DTS:DTSID="{91D49BA1-6DD5-4A20-978C-132B5A065B11}"
+              DTS:DTSID="{16F1D860-D374-44D0-B28F-E3FE8F939CE8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -446,7 +446,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Bus_or_Coach_Passenger"
-              DTS:DTSID="{680AB532-FE32-47AE-8F4D-D7982D8A4AA0}"
+              DTS:DTSID="{0D19F927-20BF-4617-AB9A-8CD239436FF9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -455,7 +455,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Pedestrian_Road_Maintenance_Worker"
-              DTS:DTSID="{D56B433F-3FAC-4556-ABF8-92487D3DFE68}"
+              DTS:DTSID="{869D947A-E8CF-482C-A48B-7975A5DCF184}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -464,7 +464,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Type"
-              DTS:DTSID="{79F17B7C-9DFE-4C67-93C0-9B5E1896A82B}"
+              DTS:DTSID="{4E2C6FB4-2F38-4768-98AD-99256C580253}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,180 +473,34 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Casualty_Home_Area_Type"
-              DTS:DTSID="{A195F8CC-1C0A-4D8B-AC64-8284FD3E3818}"
+              DTS:DTSID="{3CCD1ACE-C0D7-46BB-B333-B452782C3C90}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{28DD0FEC-13B0-4F8C-956D-77F429CE6665}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{065392AA-62D3-4104-BC0A-3D29A4084616}"
+      DTS:ObjectName="localhost">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\New Text Document.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Accident_Index"
-              DTS:DTSID="{A1231CCE-61F2-4D53-BB25-D8099A7DAF67}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Vehicle_Reference"
-              DTS:DTSID="{366CEE84-0383-4B67-89D5-8CF60B037AA4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Casualty_Reference"
-              DTS:DTSID="{7CCE6ED8-7212-4FA1-8F69-FE32160DB996}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Casualty_Class"
-              DTS:DTSID="{63EC8E95-1F19-41C8-8D6D-E2169E392E0C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Sex_of_Casualty"
-              DTS:DTSID="{BE84F1E7-FA53-4499-ACAA-DF2FA59A3E73}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Age_of_Casualty"
-              DTS:DTSID="{E32086F9-1DEC-43F9-A75C-3CE9FEEAAB83}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Age_Band_of_Casualty"
-              DTS:DTSID="{FC7B755A-5A37-4572-AAE5-C3E357D86E2D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Casualty_Severity"
-              DTS:DTSID="{A2CEC3E3-1483-44F1-8E8B-9A119CCBD372}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Pedestrian_Location"
-              DTS:DTSID="{B0CADAB1-35B4-4085-BA1C-1B9B01D3CAED}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Pedestrian_Movement"
-              DTS:DTSID="{843F7C69-6A61-4A2C-BB24-7DF1A7258ECA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Car_Passenger"
-              DTS:DTSID="{ECF6DB6E-9974-4236-BA6B-B26ABE500A0B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Bus_or_Coach_Passenger"
-              DTS:DTSID="{B45FE4FE-6C0F-46C8-8078-87E6272B846B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Pedestrian_Road_Maintenance_Worker"
-              DTS:DTSID="{90C560B5-E3D0-4974-99C1-C82D2975BF3D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Casualty_Type"
-              DTS:DTSID="{FB54C8A6-2800-42C4-AB3D-C6EE8103A147}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Casualty_Home_Area_Type"
-              DTS:DTSID="{E2E684BD-3B17-4B15-8BDF-4DC7DD8A2B3B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{47CF4BA0-379E-4ED0-9E54-842013693187}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{4A0C93F7-CE1A-4D56-92CB-7433E2DC99A0}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.PP_Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D6E4FFA3-F393-46EB-80FA-FC63C78F853F}"
+      DTS:ObjectName="localhost.PP_Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=PP_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -820,6 +674,152 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PCD_OA Source]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E94C49FA-9976-425C-9BF1-E4A70F420E92}"
+      DTS:ObjectName="PCD_OA Source">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\College\HK9\BI\ThucHanh\filenop\SourceCode\DataSource\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LU.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pcd7"
+              DTS:DTSID="{1532C9D7-D436-44EE-82F6-91D70FB1E87F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pcd8"
+              DTS:DTSID="{86C6E5D0-33D5-4C0F-A1BC-C9831F0C9776}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pcds"
+              DTS:DTSID="{2C93E5E2-BAE3-45B8-98C8-755F1A472CF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dointr"
+              DTS:DTSID="{59AAEDA5-7E99-42D3-A1E9-BDFBB02CF061}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="doterm"
+              DTS:DTSID="{F55B14B7-AC7A-4B76-BF17-99425E85617A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="usertype"
+              DTS:DTSID="{E4556D8B-0C8C-4D7A-BBFC-A00E2DEAC363}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="oa11cd"
+              DTS:DTSID="{311E0E6E-72B3-4386-A3A1-7B1CF64A39C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lsoa11cd"
+              DTS:DTSID="{9A33F8C5-105F-45D3-A649-F26B7EB19D2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="msoa11cd"
+              DTS:DTSID="{FC20FF07-8616-4A1F-B745-E3B9CD3261F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ladcd"
+              DTS:DTSID="{183EA2BB-2DAF-44E2-B5E3-E9228AECD173}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lsoa11nm"
+              DTS:DTSID="{B78514F5-B793-4126-9D02-EB225A251889}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="msoa11nm"
+              DTS:DTSID="{78F1D945-40F6-4FDE-9CB1-D58E5B66340C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ladnm"
+              DTS:DTSID="{AD97A93A-947B-4C92-8A7D-677640E7BC90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ladnmw"
+              DTS:DTSID="{FBE450FF-6B3A-4C09-862A-FA6B88CF737D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Postcode]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{BE5E1B92-80FF-419D-BFEC-0FC52D8C65A3}"
@@ -833,7 +833,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\postcodes.csv">
+          DTS:ConnectionString="C:\College\HK9\BI\ThucHanh\filenop\SourceCode\DataSource\postcodes.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -842,7 +842,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="postcode"
-              DTS:DTSID="{0AC94D9F-80E3-41F9-8296-4993D962CC81}"
+              DTS:DTSID="{D6C68E63-3FB8-4122-8E81-273364E56006}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -851,7 +851,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="easting"
-              DTS:DTSID="{FCA5C6D2-F845-4C90-A426-17A3565E41BB}"
+              DTS:DTSID="{F8949EB3-374D-42CD-80FA-208B3171115E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -860,7 +860,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="northing"
-              DTS:DTSID="{37D757CF-565F-4209-8B53-9E7A8CE43CD1}"
+              DTS:DTSID="{A8972106-FF2A-4825-8086-7911AC894BED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -869,7 +869,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="latitude"
-              DTS:DTSID="{23EA554F-F0F0-49D5-963A-F9C74A98A2D6}"
+              DTS:DTSID="{947711D1-D2A7-4311-9BC4-B147ADE76AE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -878,7 +878,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="longitude"
-              DTS:DTSID="{9CB9B404-1C5D-4144-B453-8B7778E6AD0F}"
+              DTS:DTSID="{61E7DECA-DDD7-4AA0-8ABD-E2CE03E1B799}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -887,7 +887,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="city"
-              DTS:DTSID="{4FAA2501-F4AA-4CDC-B1C6-C6B558718196}"
+              DTS:DTSID="{281D45A2-A3F2-4D14-A253-66622E2518FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -896,7 +896,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="county"
-              DTS:DTSID="{F9EE95DF-0516-4654-82B0-A8E6F25061CB}"
+              DTS:DTSID="{0AD477FC-C0F2-426E-9CFE-EA81A7BCAE5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -905,7 +905,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_code"
-              DTS:DTSID="{BCDA580D-50F8-4088-9A38-3E24AD7FD89E}"
+              DTS:DTSID="{5DC58485-2218-45B9-8532-CFBA54D4159A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -914,7 +914,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_name"
-              DTS:DTSID="{F36D852F-B6F7-473D-86C7-00C904E26899}"
+              DTS:DTSID="{AABD5BC9-972E-429F-A7F6-D4848AB15E32}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -923,7 +923,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="iso3166-2"
-              DTS:DTSID="{78F4288A-1727-4839-92CE-81FE62933DF0}"
+              DTS:DTSID="{C64A6A62-E520-477D-B1A1-D7D55E88F749}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -932,7 +932,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="region_code"
-              DTS:DTSID="{E7C6C910-7807-47EB-B3C8-8F8F9BDA8789}"
+              DTS:DTSID="{C80FB9DD-9C28-4586-8F23-2095FD81BBA9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -941,7 +941,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="region_name"
-              DTS:DTSID="{4BB103B4-799B-4DDF-AD46-A0C0B0944EBE}"
+              DTS:DTSID="{8C470511-39EF-4F40-AE16-04227562A619}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -961,7 +961,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Curriculums\Business_Intelligence\Projects\DataAndScript\UK Accidents Data 2011-2014\Vehicles1114.csv">
+          DTS:ConnectionString="C:\College\HK9\BI\ThucHanh\filenop\SourceCode\DataSource\UK-Accidents-Data-2011-2014_v1\Vehicles1114.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -970,7 +970,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Accident_Index"
-              DTS:DTSID="{D2900BCF-AF20-410E-A241-97DD1EB10882}"
+              DTS:DTSID="{F7F07643-6AEB-486F-9597-0046CFA33229}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -979,7 +979,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Reference"
-              DTS:DTSID="{62063466-4278-49EF-B4C0-5CCBD98DECD2}"
+              DTS:DTSID="{7E685462-112D-4173-A32F-78867A419AAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -988,7 +988,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Type"
-              DTS:DTSID="{C6C72624-21ED-4F92-9EB1-712FC3B38C71}"
+              DTS:DTSID="{00C34A36-0062-4AEC-85EE-C8FA19DD49DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -997,7 +997,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Towing_and_Articulation"
-              DTS:DTSID="{229F8761-2F57-4A97-8B1D-E108E88EE5AA}"
+              DTS:DTSID="{F60408E7-9479-48D0-A6EB-FDFEB4A8F10A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1006,7 +1006,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Manoeuvre"
-              DTS:DTSID="{957F9F6D-D131-484E-A8C4-EC6F8D0C2D3B}"
+              DTS:DTSID="{0BA03E28-1F6D-4C8B-8595-F43E21300589}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1015,7 +1015,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Location-Restricted_Lane"
-              DTS:DTSID="{EE026418-9B7B-4C0F-9C58-12F11419C961}"
+              DTS:DTSID="{BB56770A-913A-4546-826C-A2AB1E02890C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1024,7 +1024,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Junction_Location"
-              DTS:DTSID="{362A06D3-66BE-495F-A111-C2EF79B5D36E}"
+              DTS:DTSID="{95795EF6-EDAD-47AE-BE30-C75829BF795F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1033,7 +1033,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Skidding_and_Overturning"
-              DTS:DTSID="{9BA3AC9B-253B-4299-895D-823638D3E388}"
+              DTS:DTSID="{A20CBC04-C2A8-40C3-968E-3C2A0B9C6C71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1042,7 +1042,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Hit_Object_in_Carriageway"
-              DTS:DTSID="{4BA323DA-48BC-43F5-9CA2-1D6C8AE8F2B8}"
+              DTS:DTSID="{838A5402-82DE-4C06-BDAB-506685B2EF76}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1051,7 +1051,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle_Leaving_Carriageway"
-              DTS:DTSID="{AEBA93B6-6FF6-4349-AEAB-D8A8819505FF}"
+              DTS:DTSID="{BE0AEF17-46AD-497D-906F-DE3629C85F17}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1060,7 +1060,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Hit_Object_off_Carriageway"
-              DTS:DTSID="{238E5D92-7DA7-4FF8-9B6B-75F0C7F65FA4}"
+              DTS:DTSID="{85231665-21AA-4501-96A1-7433B64EF9E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1069,7 +1069,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="1st_Point_of_Impact"
-              DTS:DTSID="{AE634D0E-E245-4579-B022-6437A94C8939}"
+              DTS:DTSID="{D4A3DED7-BD01-4DE9-91A0-10966C840833}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1078,7 +1078,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Was_Vehicle_Left_Hand_Drive?"
-              DTS:DTSID="{2DC86B1B-A0A7-46CA-8540-984681663DA4}"
+              DTS:DTSID="{B03F8DA3-4AA1-40B2-881D-0D59FF5FAD31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1087,7 +1087,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Journey_Purpose_of_Driver"
-              DTS:DTSID="{88325B6C-75D2-476A-B920-39B97E9F8E5F}"
+              DTS:DTSID="{1BBB0EC7-EE2A-4BF0-8E50-63EA93DE84BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1096,7 +1096,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sex_of_Driver"
-              DTS:DTSID="{3CEC908F-9ADB-42A7-9290-6FDF70385C47}"
+              DTS:DTSID="{645ACE82-A5F0-4C36-9F76-AD3DC1F19A23}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1105,7 +1105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age_of_Driver"
-              DTS:DTSID="{F6E2F0C4-AA43-46F5-9665-6520582B4EB6}"
+              DTS:DTSID="{9DCEA33B-0F36-4C25-8106-5DC323D0FE63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1114,7 +1114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age_Band_of_Driver"
-              DTS:DTSID="{A76A0639-FF45-40D0-ABD4-6FEE4960AE75}"
+              DTS:DTSID="{3A4FAC7E-C7A5-4B3A-AB05-C0D802D52E0C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1123,7 +1123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Engine_Capacity_(CC)"
-              DTS:DTSID="{C808CD65-8CC2-4276-B6BE-E6A8B898543B}"
+              DTS:DTSID="{2E389E8E-DBAC-4D08-982A-5576EC706EDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1132,7 +1132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Propulsion_Code"
-              DTS:DTSID="{7561DE57-090E-4675-8527-6DB0B51A2F7B}"
+              DTS:DTSID="{3A23BA0F-1971-47E6-9420-D65D8188A379}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1141,7 +1141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age_of_Vehicle"
-              DTS:DTSID="{98E5B0E6-06CC-400D-A803-969679FD3698}"
+              DTS:DTSID="{B5B18038-37E4-456F-9EC8-414330F1A943}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1150,7 +1150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Driver_IMD_Decile"
-              DTS:DTSID="{3FA36B0D-A396-4653-BACE-74AD9C6EF5A6}"
+              DTS:DTSID="{A74D0322-9D84-4A7E-8106-6E0F794EF8D7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1159,7 +1159,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Driver_Home_Area_Type"
-              DTS:DTSID="{E14262EA-712F-4BFF-B1D7-6B2464B7361C}"
+              DTS:DTSID="{BDD47C4B-2DCE-46FA-BDF8-AD9FD292D3F6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2202,8 +2202,8 @@
               <connections>
                 <connection
                   refId="Package\AccidentToStage\Accident_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2471,6 +2471,12 @@
                       cachedName="LSOA_of_Accident_Location"
                       externalMetadataColumnId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input].ExternalColumns[LSOA_of_Accident_Location]"
                       lineageId="Package\AccidentToStage\Accidents.Outputs[Flat File Source Output].Columns[LSOA_of_Accident_Location]" />
+                    <inputColumn
+                      refId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input].Columns[createdDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="createdDate"
+                      externalMetadataColumnId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2666,6 +2672,10 @@
                       dataType="str"
                       length="50"
                       name="LSOA_of_Accident_Location" />
+                    <externalMetadataColumn
+                      refId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2687,6 +2697,79 @@
                       refId="Package\AccidentToStage\Accident_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\AccidentToStage\Accident_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AccidentToStage\Add createdDate column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add createdDate column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\AccidentToStage\Add createdDate column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\AccidentToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      name="createdDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\AccidentToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2721,8 +2804,8 @@
               <connections>
                 <connection
                   refId="Package\AccidentToStage\TRUNCATE Accidents_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2772,13 +2855,18 @@
           </components>
           <paths>
             <path
+              refId="Package\AccidentToStage.Paths[Derived Column Output]"
+              endId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\AccidentToStage\Add createdDate column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\AccidentToStage.Paths[Flat File Source Output]"
               endId="Package\AccidentToStage\TRUNCATE Accidents_Stage.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\AccidentToStage\Accidents.Outputs[Flat File Source Output]" />
             <path
               refId="Package\AccidentToStage.Paths[OLE DB Command Output]"
-              endId="Package\AccidentToStage\Accident_Stage.Inputs[OLE DB Destination Input]"
+              endId="Package\AccidentToStage\Add createdDate column.Inputs[Derived Column Input]"
               name="OLE DB Command Output"
               startId="Package\AccidentToStage\TRUNCATE Accidents_Stage.Outputs[OLE DB Command Output]" />
           </paths>
@@ -2799,6 +2887,79 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\CasualtieToStage\Add createdDate column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add createdDate column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CasualtieToStage\Add createdDate column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CasualtieToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      name="createdDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CasualtieToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\CasualtieToStage\Casualties"
               componentClassID="Microsoft.FlatFileSource"
@@ -3343,8 +3504,8 @@
               <connections>
                 <connection
                   refId="Package\CasualtieToStage\Casultie_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3352,7 +3513,7 @@
                 <input
                   refId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
@@ -3476,6 +3637,12 @@
                       cachedName="Casualty_Home_Area_Type"
                       externalMetadataColumnId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Casualty_Home_Area_Type]"
                       lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Home_Area_Type]" />
+                    <inputColumn
+                      refId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input].Columns[createdDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="createdDate"
+                      externalMetadataColumnId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3569,6 +3736,10 @@
                       dataType="str"
                       length="50"
                       name="Casualty_Home_Area_Type" />
+                    <externalMetadataColumn
+                      refId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3598,279 +3769,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\CasualtieToStage\Flat File Destination 1"
-              componentClassID="Microsoft.FlatFileDestination"
-              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Destination"
-              localeId="1033"
-              name="Flat File Destination 1"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">true</property>
-                <property
-                  dataType="System.Null"
-                  description="Specifies the text to write to the destination file before any data is written."
-                  expressionType="Notify"
-                  name="Header" />
-                <property
-                  dataType="System.Boolean"
-                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                  name="EscapeQualifier">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\CasualtieToStage\Flat File Destination 1.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
-                  name="FlatFileConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input]"
-                  hasSideEffects="true"
-                  name="Flat File Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Accident_Index]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Accident_Index"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Accident_Index]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Accident_Index]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Vehicle_Reference]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Vehicle_Reference"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle_Reference]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Vehicle_Reference]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Reference]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Casualty_Reference"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Reference]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Reference]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Class]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Casualty_Class"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Class]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Class]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Sex_of_Casualty]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Sex_of_Casualty"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Sex_of_Casualty]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Sex_of_Casualty]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Age_of_Casualty]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Age_of_Casualty"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_of_Casualty]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Age_of_Casualty]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Age_Band_of_Casualty]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Age_Band_of_Casualty"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_Band_of_Casualty]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Age_Band_of_Casualty]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Severity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Casualty_Severity"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Severity]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Severity]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Location]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Pedestrian_Location"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Location]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Location]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Movement]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Pedestrian_Movement"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Movement]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Movement]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Car_Passenger]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Car_Passenger"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Car_Passenger]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Car_Passenger]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Bus_or_Coach_Passenger]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Bus_or_Coach_Passenger"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Bus_or_Coach_Passenger]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Bus_or_Coach_Passenger]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pedestrian_Road_Maintenance_Worker]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Pedestrian_Road_Maintenance_Worker"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Road_Maintenance_Worker]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Pedestrian_Road_Maintenance_Worker]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Type]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Casualty_Type"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Type]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Type]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Casualty_Home_Area_Type]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Casualty_Home_Area_Type"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Home_Area_Type]"
-                      lineageId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output].Columns[Casualty_Home_Area_Type]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                      lineageId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
-                    <inputColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Accident_Index]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Accident_Index" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle_Reference]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Vehicle_Reference" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Reference]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Casualty_Reference" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Class]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Casualty_Class" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Sex_of_Casualty]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Sex_of_Casualty" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_of_Casualty]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Age_of_Casualty" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Age_Band_of_Casualty]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Age_Band_of_Casualty" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Severity]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Casualty_Severity" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Location]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Pedestrian_Location" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Movement]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Pedestrian_Movement" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Car_Passenger]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Car_Passenger" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Bus_or_Coach_Passenger]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Bus_or_Coach_Passenger" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pedestrian_Road_Maintenance_Worker]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Pedestrian_Road_Maintenance_Worker" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Type]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Casualty_Type" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Casualty_Home_Area_Type]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Casualty_Home_Area_Type" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                      dataType="i4"
-                      name="ErrorCode" />
-                    <externalMetadataColumn
-                      refId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                      dataType="i4"
-                      name="ErrorColumn" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-            </component>
-            <component
               refId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
@@ -3897,8 +3795,8 @@
               <connections>
                 <connection
                   refId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3948,20 +3846,20 @@
           </components>
           <paths>
             <path
+              refId="Package\CasualtieToStage.Paths[Derived Column Output]"
+              endId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\CasualtieToStage\Add createdDate column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\CasualtieToStage.Paths[Flat File Source Output]"
               endId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\CasualtieToStage\Casualties.Outputs[Flat File Source Output]" />
             <path
               refId="Package\CasualtieToStage.Paths[OLE DB Command Output]"
-              endId="Package\CasualtieToStage\Casultie_Stage.Inputs[OLE DB Destination Input]"
+              endId="Package\CasualtieToStage\Add createdDate column.Inputs[Derived Column Input]"
               name="OLE DB Command Output"
               startId="Package\CasualtieToStage\TRUNCATE Casualtie_Stage.Outputs[OLE DB Command Output]" />
-            <path
-              refId="Package\CasualtieToStage.Paths[OLE DB Destination Error Output]"
-              endId="Package\CasualtieToStage\Flat File Destination 1.Inputs[Flat File Destination Input]"
-              name="OLE DB Destination Error Output"
-              startId="Package\CasualtieToStage\Casultie_Stage.Outputs[OLE DB Destination Error Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3980,6 +3878,79 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add createdDate column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      name="createdDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
               componentClassID="Microsoft.FlatFileSource"
@@ -4002,8 +3973,8 @@
               <connections>
                 <connection
                   refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[PCD_OA]"
-                  connectionManagerRefId="Package.ConnectionManagers[PCD_OA]"
+                  connectionManagerID="Package.ConnectionManagers[PCD_OA Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[PCD_OA Source]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4431,7 +4402,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[PCD_OA_Stage]</property>
+                  name="OpenRowset">[dbo].[PCD_OA_Stage]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4474,8 +4445,8 @@
               <connections>
                 <connection
                   refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4591,6 +4562,12 @@
                       cachedName="ladnm"
                       externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input].ExternalColumns[ladnm]"
                       lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA.Outputs[Flat File Source Output].Columns[ladnm]" />
+                    <inputColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input].Columns[createdDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="createdDate"
+                      externalMetadataColumnId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4672,6 +4649,10 @@
                       dataType="str"
                       length="50"
                       name="ladnm" />
+                    <externalMetadataColumn
+                      refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4727,8 +4708,8 @@
               <connections>
                 <connection
                   refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4778,13 +4759,18 @@
           </components>
           <paths>
             <path
+              refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Derived Column Output]"
+              endId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
               endId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA.Outputs[Flat File Source Output]" />
             <path
               refId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[OLE DB Command Output]"
-              endId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage.Inputs[OLE DB Destination Input]"
+              endId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column.Inputs[Derived Column Input]"
               name="OLE DB Command Output"
               startId="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA.Outputs[OLE DB Command Output]" />
           </paths>
@@ -4805,6 +4791,79 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\PostcodeToStage\Add createdDate column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add createdDate column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\PostcodeToStage\Add createdDate column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\PostcodeToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      name="createdDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\PostcodeToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\PostcodeToStage\Postcode"
               componentClassID="Microsoft.FlatFileSource"
@@ -5222,7 +5281,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Postcode_Stage]</property>
+                  name="OpenRowset">[dbo].[Postcode_Stage]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5374,6 +5433,12 @@
                       cachedName="region_name"
                       externalMetadataColumnId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input].ExternalColumns[region_name]"
                       lineageId="Package\PostcodeToStage\Postcode.Outputs[Flat File Source Output].Columns[region_name]" />
+                    <inputColumn
+                      refId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input].Columns[createdDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="createdDate"
+                      externalMetadataColumnId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5449,6 +5514,10 @@
                       dataType="str"
                       length="50"
                       name="region_name" />
+                    <externalMetadataColumn
+                      refId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -5495,7 +5564,8 @@
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">TRUNCATE TABLE [dbo].[Postcode_Stage]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">TRUNCATE TABLE [dbo].[Postcode_Stage]
+</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5504,8 +5574,8 @@
               <connections>
                 <connection
                   refId="Package\PostcodeToStage\TRUNCATE Postcode_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5555,13 +5625,18 @@
           </components>
           <paths>
             <path
+              refId="Package\PostcodeToStage.Paths[Derived Column Output]"
+              endId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\PostcodeToStage\Add createdDate column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\PostcodeToStage.Paths[Flat File Source Output]"
               endId="Package\PostcodeToStage\TRUNCATE Postcode_Stage.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\PostcodeToStage\Postcode.Outputs[Flat File Source Output]" />
             <path
               refId="Package\PostcodeToStage.Paths[OLE DB Command Output]"
-              endId="Package\PostcodeToStage\Postcode_Stage.Inputs[OLE DB Destination Input]"
+              endId="Package\PostcodeToStage\Add createdDate column.Inputs[Derived Column Input]"
               name="OLE DB Command Output"
               startId="Package\PostcodeToStage\TRUNCATE Postcode_Stage.Outputs[OLE DB Command Output]" />
           </paths>
@@ -5582,6 +5657,79 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\VehiclesToStage\Add createdDate column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add createdDate column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\VehiclesToStage\Add createdDate column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\VehiclesToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]"
+                      name="createdDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\VehiclesToStage\Add createdDate column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
               componentClassID="Microsoft.OLEDBCommand"
@@ -5609,8 +5757,8 @@
               <connections>
                 <connection
                   refId="Package\VehiclesToStage\TRUNCATE Vehicle_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6397,8 +6545,8 @@
               <connections>
                 <connection
                   refId="Package\VehiclesToStage\Vehicle_Stage.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.PP_Stage]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.PP_Stage]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PP_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PP_Stage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6586,6 +6734,12 @@
                       cachedName="1st_Point_of_Impact"
                       externalMetadataColumnId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input].ExternalColumns[1st_Point_of_Impact]"
                       lineageId="Package\VehiclesToStage\Vehicles.Outputs[Flat File Source Output].Columns[1st_Point_of_Impact]" />
+                    <inputColumn
+                      refId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input].Columns[createdDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="createdDate"
+                      externalMetadataColumnId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Output].Columns[createdDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6721,6 +6875,10 @@
                       dataType="str"
                       length="50"
                       name="Driver_IMD_Decile" />
+                    <externalMetadataColumn
+                      refId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6752,13 +6910,18 @@
           </components>
           <paths>
             <path
+              refId="Package\VehiclesToStage.Paths[Derived Column Output]"
+              endId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\VehiclesToStage\Add createdDate column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\VehiclesToStage.Paths[Flat File Source Output]"
               endId="Package\VehiclesToStage\TRUNCATE Vehicle_Stage.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\VehiclesToStage\Vehicles.Outputs[Flat File Source Output]" />
             <path
               refId="Package\VehiclesToStage.Paths[OLE DB Command Output]"
-              endId="Package\VehiclesToStage\Vehicle_Stage.Inputs[OLE DB Destination Input]"
+              endId="Package\VehiclesToStage\Add createdDate column.Inputs[Derived Column Input]"
               name="OLE DB Command Output"
               startId="Package\VehiclesToStage\TRUNCATE Vehicle_Stage.Outputs[OLE DB Command Output]" />
           </paths>
@@ -6781,23 +6944,23 @@
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\AccidentToStage"
-          TopLeft="82.1428585417418,61.1764714462122" />
+          TopLeft="62.1428582011438,124.067737925387" />
         <NodeLayout
           Size="159.2,41.6"
           Id="Package\CasualtieToStage"
-          TopLeft="488.57143689175,54.2941184085134" />
+          TopLeft="480.47619865865,238.224092976858" />
         <NodeLayout
           Size="321.6,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage"
-          TopLeft="99.28571597654,134.588237181667" />
+          TopLeft="103.401362305132,367.896363703025" />
         <NodeLayout
           Size="159.2,41.6"
           Id="Package\PostcodeToStage"
-          TopLeft="299.28571938252,58.1176478739016" />
+          TopLeft="271.836739323229,241.100843717482" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\VehiclesToStage"
-          TopLeft="684.285725939031,55.058824301591" />
+          TopLeft="67.2789127103791,242.557426370964" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6809,41 +6972,45 @@
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\AccidentToStage\Accident_Stage"
-          TopLeft="359.5,282.5" />
+          TopLeft="346.166666666667,340.833333333333" />
         <NodeLayout
-          Size="210.4,41.6"
-          Id="Package\AccidentToStage\TRUNCATE Accidents_Stage"
-          TopLeft="350.769230769231,126.923076923077" />
+          Size="194.4,41.6"
+          Id="Package\AccidentToStage\Add createdDate column"
+          TopLeft="344.166666666667,246" />
         <NodeLayout
           Size="123.2,41.6"
           Id="Package\AccidentToStage\Accidents"
-          TopLeft="372.230769230769,23.4615384615385" />
+          TopLeft="353.897435897436,40.9615384615385" />
+        <NodeLayout
+          Size="210.4,41.6"
+          Id="Package\AccidentToStage\TRUNCATE Accidents_Stage"
+          TopLeft="313.269230769231,151.089743589744" />
         <EdgeLayout
-          Id="Package\AccidentToStage.Paths[Flat File Source Output]"
-          TopLeft="433.830769230769,65.0615384615385">
+          Id="Package\AccidentToStage.Paths[OLE DB Command Output]"
+          TopLeft="418.469230769231,192.689743589744">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="22.138461538462,61.8615384615385"
+              EndConnector="22.8974358974361,53.310256410256"
               Start="0,0"
-              End="22.138461538462,54.3615384615385">
+              End="22.8974358974361,45.810256410256">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.9307692307693" />
+                    End="0,22.655128205128" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.9307692307693"
-                    Point2="0,30.9307692307693"
-                    Point3="4,30.9307692307693" />
+                    Point1="0,22.655128205128"
+                    Point2="0,26.655128205128"
+                    Point3="4,26.655128205128" />
                   <mssgle:LineSegment
-                    End="18.138461538462,30.9307692307693" />
+                    End="18.8974358974361,26.655128205128" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.138461538462,30.9307692307693"
-                    Point2="22.138461538462,30.9307692307693"
-                    Point3="22.138461538462,34.9307692307693" />
+                    Point1="18.8974358974361,26.655128205128"
+                    Point2="22.8974358974361,26.655128205128"
+                    Point3="22.8974358974361,30.655128205128" />
                   <mssgle:LineSegment
-                    End="22.138461538462,54.3615384615385" />
+                    End="22.8974358974361,45.810256410256" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6853,31 +7020,53 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\AccidentToStage.Paths[OLE DB Command Output]"
-          TopLeft="455.969230769231,168.523076923077">
+          Id="Package\AccidentToStage.Paths[Flat File Source Output]"
+          TopLeft="416.983333333334,82.5615384615385">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-21.269230769231,113.976923076923"
+              EndConnector="0,68.5282051282055"
               Start="0,0"
-              End="-21.269230769231,106.476923076923">
+              End="0,61.0282051282055">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.9884615384615" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,52.9884615384615"
-                    Point2="0,56.9884615384615"
-                    Point3="-4,56.9884615384615" />
+                    End="0,61.0282051282055" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AccidentToStage.Paths[Derived Column Output]"
+          TopLeft="441.366666666667,287.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.0000000000001,53.233333333333"
+              Start="0,0"
+              End="-20.0000000000001,45.733333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-17.269230769231,56.9884615384615" />
+                    End="0,22.6166666666665" />
                   <mssgle:CubicBezierSegment
-                    Point1="-17.269230769231,56.9884615384615"
-                    Point2="-21.269230769231,56.9884615384615"
-                    Point3="-21.269230769231,60.9884615384615" />
+                    Point1="0,22.6166666666665"
+                    Point2="0,26.6166666666665"
+                    Point3="-4,26.6166666666665" />
                   <mssgle:LineSegment
-                    End="-21.269230769231,106.476923076923" />
+                    End="-16.0000000000001,26.6166666666665" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.0000000000001,26.6166666666665"
+                    Point2="-20.0000000000001,26.6166666666665"
+                    Point3="-20.0000000000001,30.6166666666665" />
+                  <mssgle:LineSegment
+                    End="-20.0000000000001,45.733333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6906,79 +7095,33 @@
     design-time-name="Package\CasualtieToStage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="208.8,41.6"
           Id="Package\CasualtieToStage\TRUNCATE Casualtie_Stage"
-          TopLeft="238.571432634276,140.705884326288" />
+          TopLeft="353.571432634276,226.705884326288" />
         <NodeLayout
           Size="125.6,41.6"
           Id="Package\CasualtieToStage\Casualties"
-          TopLeft="202.85714631178,8.41176482385417" />
+          TopLeft="388.85714631178,97.4117648238542" />
         <NodeLayout
           Size="148,41.6"
           Id="Package\CasualtieToStage\Casultie_Stage"
-          TopLeft="303.857148014769,256.941180074091" />
-        <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
-          TopLeft="342.971432634276,182.305884326288">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="34.885715380493,74.635295747803"
-              Start="0,0"
-              End="34.885715380493,67.135295747803">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.3176478739015" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.3176478739015"
-                    Point2="0,37.3176478739015"
-                    Point3="4,37.3176478739015" />
-                  <mssgle:LineSegment
-                    End="30.885715380493,37.3176478739015" />
-                  <mssgle:CubicBezierSegment
-                    Point1="30.885715380493,37.3176478739015"
-                    Point2="34.885715380493,37.3176478739015"
-                    Point3="34.885715380493,41.3176478739015" />
-                  <mssgle:LineSegment
-                    End="34.885715380493,67.135295747803" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="387.857148014769,419.941180074091" />
         <EdgeLayout
           Id="Package\CasualtieToStage.Paths[Flat File Source Output]"
-          TopLeft="265.65714631178,50.0117648238542">
+          TopLeft="454.814289473028,139.011764823854">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="77.3142863224959,90.6941195024338"
+              EndConnector="0,87.6941195024339"
               Start="0,0"
-              End="77.3142863224959,83.1941195024338">
+              End="0,80.1941195024339">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.3470597512169"
-                    Point2="0,45.3470597512169"
-                    Point3="4,45.3470597512169" />
-                  <mssgle:LineSegment
-                    End="73.3142863224959,45.3470597512169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="73.3142863224959,45.3470597512169"
-                    Point2="77.3142863224959,45.3470597512169"
-                    Point3="77.3142863224959,49.3470597512169" />
-                  <mssgle:LineSegment
-                    End="77.3142863224959,83.1941195024338" />
+                    End="0,80.1941195024339" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6988,43 +7131,51 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="180,41.6"
-          Id="Package\CasualtieToStage\Flat File Destination 1"
-          TopLeft="430,383" />
+          Size="194.4,41.6"
+          Id="Package\CasualtieToStage\Add createdDate column"
+          TopLeft="368,314" />
         <EdgeLayout
-          Id="Package\CasualtieToStage.Paths[OLE DB Destination Error Output]"
-          TopLeft="377.857148014769,298.541180074091">
+          Id="Package\CasualtieToStage.Paths[OLE DB Command Output]"
+          TopLeft="461.585716317138,268.305884326288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="142.142851985231,84.458819925909"
+              EndConnector="0,45.694115673712"
               Start="0,0"
-              End="142.142851985231,76.958819925909">
+              End="0,38.194115673712">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.2294099629545" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38.2294099629545"
-                    Point2="0,42.2294099629545"
-                    Point3="4,42.2294099629545" />
-                  <mssgle:LineSegment
-                    End="138.142851985231,42.2294099629545" />
-                  <mssgle:CubicBezierSegment
-                    Point1="138.142851985231,42.2294099629545"
-                    Point2="142.142851985231,42.2294099629545"
-                    Point3="142.142851985231,46.2294099629545" />
-                  <mssgle:LineSegment
-                    End="142.142851985231,76.958819925909" />
+                    End="0,38.194115673712" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-2.1374802573845,47.2294099629545,146.4178125,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CasualtieToStage.Paths[Derived Column Output]"
+          TopLeft="463.528574007384,355.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.341180074091"
+              Start="0,0"
+              End="0,56.841180074091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.841180074091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7047,89 +7198,111 @@
     design-time-name="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172.8,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\TRUNCATE PCD_OA"
-          TopLeft="126,249" />
+          TopLeft="226.71428742944,234.470588031525" />
         <NodeLayout
           Size="117.6,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA"
-          TopLeft="169.5,137.5" />
+          TopLeft="259.500001532691,117.617646779981" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\PCD_OA_Stage"
-          TopLeft="264,360" />
+          TopLeft="228.571428121353,395.352940886903" />
         <EdgeLayout
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[OLE DB Command Output]"
-          TopLeft="212.4,290.6">
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
+          TopLeft="315.707144481065,159.217646779981">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="126.8,69.3999999999999"
+              EndConnector="0,75.2529412515435"
               Start="0,0"
-              End="126.8,61.8999999999999">
+              End="0,67.7529412515435">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.7"
-                    Point2="0,34.7"
-                    Point3="4,34.7" />
-                  <mssgle:LineSegment
-                    End="122.8,34.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="122.8,34.7"
-                    Point2="126.8,34.7"
-                    Point3="126.8,38.7" />
-                  <mssgle:LineSegment
-                    End="126.8,61.8999999999999" />
+                    End="0,67.7529412515435" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage\Add createdDate column"
+          TopLeft="233,312" />
+        <EdgeLayout
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[OLE DB Command Output]"
+          TopLeft="313.11428742944,276.070588031525">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17.0857125705601,35.929411968475"
+              Start="0,0"
+              End="17.0857125705601,28.429411968475">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.9647059842375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.9647059842375"
+                    Point2="0,17.9647059842375"
+                    Point3="4,17.9647059842375" />
+                  <mssgle:LineSegment
+                    End="13.0857125705601,17.9647059842375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.0857125705601,17.9647059842375"
+                    Point2="17.0857125705601,17.9647059842375"
+                    Point3="17.0857125705601,21.9647059842375" />
+                  <mssgle:LineSegment
+                    End="17.0857125705601,28.429411968475" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Flat File Source Output]"
-          TopLeft="228.3,179.1">
+          Id="Package\PCD_OA_LSOA_MSOA_LAD_AUG21_UK_LUToStage.Paths[Derived Column Output]"
+          TopLeft="330.2,353.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15.9,69.9000000000001"
+              EndConnector="-26.4285718786472,41.7529408869029"
               Start="0,0"
-              End="-15.9,62.4000000000001">
+              End="-26.4285718786472,34.2529408869029">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.95" />
+                    End="0,16.8764704434515" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.95"
-                    Point2="0,34.95"
-                    Point3="-4,34.95" />
+                    Point1="0,16.8764704434515"
+                    Point2="0,20.8764704434515"
+                    Point3="-4,20.8764704434515" />
                   <mssgle:LineSegment
-                    End="-11.9,34.95" />
+                    End="-22.4285718786472,20.8764704434515" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11.9,34.95"
-                    Point2="-15.9,34.95"
-                    Point3="-15.9,38.95" />
+                    Point1="-22.4285718786472,20.8764704434515"
+                    Point2="-26.4285718786472,20.8764704434515"
+                    Point3="-26.4285718786472,24.8764704434515" />
                   <mssgle:LineSegment
-                    End="-15.9,62.4000000000001" />
+                    End="-26.4285718786472,34.2529408869029" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7156,41 +7329,67 @@
         <NodeLayout
           Size="208,41.6"
           Id="Package\PostcodeToStage\TRUNCATE Postcode_Stage"
-          TopLeft="302.833333333333,132.833333333333" />
+          TopLeft="395.833333333333,218.833333333333" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\PostcodeToStage\Postcode_Stage"
-          TopLeft="261,206.6" />
+          TopLeft="422,401.6" />
         <NodeLayout
           Size="120.8,41.6"
           Id="Package\PostcodeToStage\Postcode"
-          TopLeft="309,25" />
+          TopLeft="434.5,84.6666666666667" />
         <EdgeLayout
-          Id="Package\PostcodeToStage.Paths[OLE DB Command Output]"
-          TopLeft="406.833333333333,174.433333333333">
+          Id="Package\PostcodeToStage.Paths[Flat File Source Output]"
+          TopLeft="497.366666666667,126.266666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-69.433333333333,32.166666666667"
+              EndConnector="0,92.5666666666664"
               Start="0,0"
-              End="-69.433333333333,24.666666666667">
+              End="0,85.0666666666664">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.0833333333335" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.0833333333335"
-                    Point2="0,16.0833333333335"
-                    Point3="-4,16.0833333333335" />
+                    End="0,85.0666666666664" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\PostcodeToStage\Add createdDate column"
+          TopLeft="423,310" />
+        <EdgeLayout
+          Id="Package\PostcodeToStage.Paths[OLE DB Command Output]"
+          TopLeft="499.833333333333,260.433333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.366666666667,49.566666666667"
+              Start="0,0"
+              End="20.366666666667,42.066666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-65.433333333333,16.0833333333335" />
+                    End="0,20.7833333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="-65.433333333333,16.0833333333335"
-                    Point2="-69.433333333333,16.0833333333335"
-                    Point3="-69.433333333333,20.0833333333335" />
+                    Point1="0,20.7833333333335"
+                    Point2="0,24.7833333333335"
+                    Point3="4,24.7833333333335" />
                   <mssgle:LineSegment
-                    End="-69.433333333333,24.666666666667" />
+                    End="16.366666666667,24.7833333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.366666666667,24.7833333333335"
+                    Point2="20.366666666667,24.7833333333335"
+                    Point3="20.366666666667,28.7833333333335" />
+                  <mssgle:LineSegment
+                    End="20.366666666667,42.066666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7200,31 +7399,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\PostcodeToStage.Paths[Flat File Source Output]"
-          TopLeft="369.4,66.6">
+          Id="Package\PostcodeToStage.Paths[Derived Column Output]"
+          TopLeft="520.2,351.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.4333333333334,66.2333333333334"
+              EndConnector="-21.8,49.9999999999999"
               Start="0,0"
-              End="37.4333333333334,58.7333333333334">
+              End="-21.8,42.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.1166666666667" />
+                    End="0,20.9999999999999" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.1166666666667"
-                    Point2="0,33.1166666666667"
-                    Point3="4,33.1166666666667" />
+                    Point1="0,20.9999999999999"
+                    Point2="0,24.9999999999999"
+                    Point3="-4,24.9999999999999" />
                   <mssgle:LineSegment
-                    End="33.4333333333334,33.1166666666667" />
+                    End="-17.8,24.9999999999999" />
                   <mssgle:CubicBezierSegment
-                    Point1="33.4333333333334,33.1166666666667"
-                    Point2="37.4333333333334,33.1166666666667"
-                    Point3="37.4333333333334,37.1166666666667" />
+                    Point1="-17.8,24.9999999999999"
+                    Point2="-21.8,24.9999999999999"
+                    Point3="-21.8,28.9999999999999" />
                   <mssgle:LineSegment
-                    End="37.4333333333334,58.7333333333334" />
+                    End="-21.8,42.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7257,41 +7456,67 @@
         <NodeLayout
           Size="116.8,41.6"
           Id="Package\VehiclesToStage\Vehicles"
-          TopLeft="90.5,67.5" />
+          TopLeft="292.64286058533,67.5" />
         <NodeLayout
           Size="144,41.6"
           Id="Package\VehiclesToStage\Vehicle_Stage"
-          TopLeft="217,325" />
+          TopLeft="284.857144012743,349.640523221392" />
         <NodeLayout
           Size="199.2,41.6"
           Id="Package\VehiclesToStage\TRUNCATE Vehicle_Stage"
-          TopLeft="95.0000005960464,191.529413609356" />
+          TopLeft="257.85714622663,186.94117825089" />
         <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
-          TopLeft="194.600000596046,233.129413609356">
+          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
+          TopLeft="354.25000340598,109.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="94.3999994039537,91.870586390644"
+              EndConnector="0,77.8411782508901"
               Start="0,0"
-              End="94.3999994039537,84.370586390644">
+              End="0,70.3411782508901">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.935293195322" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.935293195322"
-                    Point2="0,45.935293195322"
-                    Point3="4,45.935293195322" />
+                    End="0,70.3411782508901" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\VehiclesToStage\Add createdDate column"
+          TopLeft="280.555560333389,273.254905793081" />
+        <EdgeLayout
+          Id="Package\VehiclesToStage.Paths[OLE DB Command Output]"
+          TopLeft="357.45714622663,228.54117825089">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.2984141067586,44.7137275421913"
+              Start="0,0"
+              End="20.2984141067586,37.2137275421913">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="90.3999994039537,45.935293195322" />
+                    End="0,18.3568637710957" />
                   <mssgle:CubicBezierSegment
-                    Point1="90.3999994039537,45.935293195322"
-                    Point2="94.3999994039537,45.935293195322"
-                    Point3="94.3999994039537,49.935293195322" />
+                    Point1="0,18.3568637710957"
+                    Point2="0,22.3568637710957"
+                    Point3="4,22.3568637710957" />
                   <mssgle:LineSegment
-                    End="94.3999994039537,84.370586390644" />
+                    End="16.2984141067586,22.3568637710957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.2984141067586,22.3568637710957"
+                    Point2="20.2984141067586,22.3568637710957"
+                    Point3="20.2984141067586,26.3568637710957" />
+                  <mssgle:LineSegment
+                    End="20.2984141067586,37.2137275421913" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7301,31 +7526,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\VehiclesToStage.Paths[Flat File Source Output]"
-          TopLeft="148.9,109.1">
+          Id="Package\VehiclesToStage.Paths[Derived Column Output]"
+          TopLeft="377.755560333389,314.854905793081">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="45.7000005960464,82.429413609356"
+              EndConnector="-20.8984163206457,34.7856174283102"
               Start="0,0"
-              End="45.7000005960464,74.929413609356">
+              End="-20.8984163206457,27.2856174283102">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.214706804678" />
+                    End="0,13.3928087141551" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.214706804678"
-                    Point2="0,41.214706804678"
-                    Point3="4,41.214706804678" />
+                    Point1="0,13.3928087141551"
+                    Point2="0,17.3928087141551"
+                    Point3="-4,17.3928087141551" />
                   <mssgle:LineSegment
-                    End="41.7000005960464,41.214706804678" />
+                    End="-16.8984163206457,17.3928087141551" />
                   <mssgle:CubicBezierSegment
-                    Point1="41.7000005960464,41.214706804678"
-                    Point2="45.7000005960464,41.214706804678"
-                    Point3="45.7000005960464,45.214706804678" />
+                    Point1="-16.8984163206457,17.3928087141551"
+                    Point2="-20.8984163206457,17.3928087141551"
+                    Point3="-20.8984163206457,21.3928087141551" />
                   <mssgle:LineSegment
-                    End="45.7000005960464,74.929413609356" />
+                    End="-20.8984163206457,27.2856174283102" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
