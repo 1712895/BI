@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="MainPackage"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{321CF134-2C73-4A62-A007-2EFA579E429D}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{6425E19F-C5AC-4F86-AA5A-66855CA4B9C0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -38,6 +38,7 @@
       DTS:refId="Package\StageToNDS"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
+      DTS:Disabled="True"
       DTS:DTSID="{14CE8343-337B-46BA-B812-643CB2AE9582}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
